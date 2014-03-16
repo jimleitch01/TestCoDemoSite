@@ -9,7 +9,6 @@
 
 
 
-
     <description>
         
         Jim Some Nice Text Here
@@ -32,17 +31,12 @@ ${message}
 
 <echo message="Starting Instances"/>
 
-<for list="lb,web01,web02,mysql" param="hosttype">
-    <sequential>
-        <echo>hosttype is @{hosttype}</echo>
-        
-        
+
         <sshexec host="${stack-master}"
         username="root"
         keyfile="${user.home}/.ssh/id_dsa"
-        command=". keystonerc_admin; nova boot --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{hosttype}"/>
-        
-    </sequential>
+        command=". keystonerc_admin; nova boot --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{web01}"/>
+ 
 </for>
 
 </target>
