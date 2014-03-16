@@ -48,10 +48,5 @@ ${message}
 </target>
 
 
-<!--
-
-ssh root@10.10.10.10 ". keystonerc_admin; nova boot --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 red-web01"
-
--->
 
 </project>
