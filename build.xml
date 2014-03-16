@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="TestCoDemoSite" default="welcome" basedir="." description="a demo project">
+<project name="TestCoDemoSite" default="welcome" basedir=".">
     
+    <description>
+        
+        Jim Some Nice Text Here
+        
+    </description>
     
     <!-- Made on the mac -->
     
 <property name="message" value="Hello World!"/>
 
 <target name="welcome">
-<echo msg="${message}"/>
+<echo>
+${message}
+</echo>
 </target>
 </project>
