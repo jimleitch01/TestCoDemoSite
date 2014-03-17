@@ -5,7 +5,8 @@
       location = "group:"
       name = "">
       <FileRef
-         location = "group:build.xml">
+         location = "group:build.xml"
+         assignedFileDataType = "public.xml">
       </FileRef>
       <Group
          location = "group:dir1"

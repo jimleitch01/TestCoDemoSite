@@ -18,29 +18,29 @@
     </target>
     
     <target name="fortest">
-        
-        
-        
-    
         <echo message="Our servers are::"/>
         <for list="lb,web01,web02,mysql" param="servertype">
             <sequential>
                 <echo>Server @{servertype}</echo>
+                <echo>Color ${color}</echo>
+                
                 <exec executable="nova" outputproperty="InstanceID">
                     <arg line="boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{servertype}"/>
-                        </exec>
-                    </sequential>
-                </for>
-            </target>
-            
-            <target name="cloud-up">
-                
-                <echo message="Starting Instances"/>
-                
-                <exec executable="nova">
-                    <arg line="boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-${servertype}"/>
                 </exec>
                 
-            </target>
-            
-        </project>
+            </sequential>
+        </for>
+    </target>
+    
+    
+    <target name="cloud-up">
+        
+        <echo message="Starting Instances"/>
+        
+        <exec executable="nova">
+            <arg line="boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-${servertype}"/>
+        </exec>
+        
+    </target>
+    
+</project>
