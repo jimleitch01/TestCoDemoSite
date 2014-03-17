@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="TestCoDemoSite" default="welcome" basedir=".">
-
-
-<property name="src" location="src"/>
-<property name="color" location="red"/>
-<property name="stack-master"  value="10.10.10.10"/>
-
-
-
-
+    <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+    
+    <property name="src" value="src"/>
+    <property name="color" value="red"/>
+    
     <description>
-        
         Jim Some Nice Text Here
-        
     </description>
     
-    <!-- Made on the mac -->
+    <property name="message" value="Hello World!"/>
     
-<property name="message" value="Hello World!"/>
-
-<target name="welcome">
-<echo>
-${message}
-</echo>
-</target>
-
-
-
-<target name="cloud-up">
-
-<echo message="Starting Instances"/>
-
-
-        <sshexec host="${stack-master}"
-        username="root"
-        keyfile="${user.home}/.ssh/id_dsa"
-        command=". keystonerc_admin; nova boot --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{web01}"/>
- 
-</for>
-
-</target>
-
-
-
-</project>
+    <target name="welcome">
+        <echo>
+            ${message}
+        </echo>
+    </target>
+    
+    <target name="fortest">
+        
+        <echo message="Our servers are::"/>
+        <for list="lb,web01,web02,mysql" param="servertype">
+            <sequential>
+                <echo>Server @{servertype}</echo>
+                <exec executable="nova" outputproperty="InstanceID">
+                    <arg line="boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{servertype}"
+                        </exec>
+                    </sequential>
+                </for>
+            </target>
+            
+            <target name="cloud-up">
+                
+                <echo message="Starting Instances"/>
+                
+                <exec executable="nova">
+                    <arg line="boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-${servertype}"/>
+                </exec>
+                
+            </target>
+            
+        </project>
