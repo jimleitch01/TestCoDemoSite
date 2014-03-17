@@ -5,6 +5,9 @@
       location = "group:"
       name = "">
       <FileRef
+         location = "group:instance-o-mizer.sh">
+      </FileRef>
+      <FileRef
          location = "group:build.xml"
          assignedFileDataType = "public.xml">
       </FileRef>
