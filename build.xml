@@ -29,7 +29,7 @@
                 </shellscript>
                     
                 <echo>
-                    instanceID instanceID-${color}-@{servertype}
+                    ${instanceID}
                 </echo>
                 
             </sequential>
