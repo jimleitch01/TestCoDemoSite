@@ -3,7 +3,7 @@
     <taskdef resource="net/sf/antcontrib/antlib.xml"/>
     
     <property name="src" value="src"/>
-    <property name="color" value="red"/>
+    
     
     <description>
         Jim Some Nice Text Here
@@ -19,6 +19,9 @@
     
     <target name="fortest">
         
+        
+        
+    
         <echo message="Our servers are::"/>
         <for list="lb,web01,web02,mysql" param="servertype">
             <sequential>
