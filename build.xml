@@ -24,11 +24,15 @@
                 <echo>Server @{servertype}</echo>
                 <echo>Color ${color}</echo>
                 
-                <exec executable="nova" outputproperty="nova.out">
-                    <arg line="boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{servertype} | grep jim"/>
+                <shellscript>
+                    shell="bash"
+                    instanceID="nova boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{servertype} | grep id"
+                </shellscript>
+                    
+                    
                 </exec>
                 <echo>
-                    NOVA ${nova.out}
+                    instanceID instanceID-${color}-@{servertype}
                 </echo>
                 
             </sequential>
