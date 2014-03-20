@@ -15,4 +15,5 @@ OUTPUT=`nova boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c504376
 
 INSTANCEID=`echo $OUTPUT | grep " id "`
 
+
 echo INSTANCEID=$INSTANCEID
