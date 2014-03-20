@@ -12,6 +12,8 @@
 	<dict>
 		<key>25B29738-BFA9-4A9B-899A-DCB972C50546</key>
 		<string>ssh://github.com/jimleitch01/TestCoDemoSite.git</string>
+		<key>294E563B-FAC1-4B48-B4E9-A6A09192ABB3</key>
+		<string>https://github.com/jimleitch01/TestCoDemoSite</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TestCoDemoSite.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>25B29738-BFA9-4A9B-899A-DCB972C50546</key>
 		<string>..</string>
+		<key>294E563B-FAC1-4B48-B4E9-A6A09192ABB3</key>
+		<string>../../TestCoDemoSite.old</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/jimleitch01/TestCoDemoSite.git</string>
@@ -35,6 +39,14 @@
 			<string>25B29738-BFA9-4A9B-899A-DCB972C50546</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TestCoDemoSite</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>294E563B-FAC1-4B48-B4E9-A6A09192ABB3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestCoDemoSite.old</string>
 		</dict>
 	</array>
 </dict>
