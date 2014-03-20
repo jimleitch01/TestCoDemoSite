@@ -1,0 +1,3785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:"
+      name = "">
+      <FileRef
+         location = "group:instance-o-mizer.sh">
+      </FileRef>
+      <FileRef
+         location = "group:build.xml"
+         assignedFileDataType = "public.xml">
+      </FileRef>
+      <Group
+         location = "group:dir1"
+         name = "dir1">
+         <FileRef
+            location = "group:file2.txt">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:drupal"
+         name = "drupal">
+         <FileRef
+            location = "group:authorize.php">
+         </FileRef>
+         <FileRef
+            location = "group:build.xml">
+         </FileRef>
+         <FileRef
+            location = "group:CHANGELOG.txt">
+         </FileRef>
+         <FileRef
+            location = "group:COPYRIGHT.txt">
+         </FileRef>
+         <FileRef
+            location = "group:cron.php">
+         </FileRef>
+         <Group
+            location = "group:includes"
+            name = "includes">
+            <FileRef
+               location = "group:actions.inc">
+            </FileRef>
+            <FileRef
+               location = "group:ajax.inc">
+            </FileRef>
+            <FileRef
+               location = "group:archiver.inc">
+            </FileRef>
+            <FileRef
+               location = "group:authorize.inc">
+            </FileRef>
+            <FileRef
+               location = "group:batch.inc">
+            </FileRef>
+            <FileRef
+               location = "group:batch.queue.inc">
+            </FileRef>
+            <FileRef
+               location = "group:bootstrap.inc">
+            </FileRef>
+            <FileRef
+               location = "group:cache-install.inc">
+            </FileRef>
+            <FileRef
+               location = "group:cache.inc">
+            </FileRef>
+            <FileRef
+               location = "group:common.inc">
+            </FileRef>
+            <Group
+               location = "group:database"
+               name = "database">
+               <FileRef
+                  location = "group:database.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:log.inc">
+               </FileRef>
+               <Group
+                  location = "group:mysql"
+                  name = "mysql">
+                  <FileRef
+                     location = "group:database.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:install.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:query.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:schema.inc">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:pgsql"
+                  name = "pgsql">
+                  <FileRef
+                     location = "group:database.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:install.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:query.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:schema.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:select.inc">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:prefetch.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:query.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:schema.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:select.inc">
+               </FileRef>
+               <Group
+                  location = "group:sqlite"
+                  name = "sqlite">
+                  <FileRef
+                     location = "group:database.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:install.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:query.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:schema.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:select.inc">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:date.inc">
+            </FileRef>
+            <FileRef
+               location = "group:entity.inc">
+            </FileRef>
+            <FileRef
+               location = "group:errors.inc">
+            </FileRef>
+            <FileRef
+               location = "group:file.inc">
+            </FileRef>
+            <FileRef
+               location = "group:file.mimetypes.inc">
+            </FileRef>
+            <Group
+               location = "group:filetransfer"
+               name = "filetransfer">
+               <FileRef
+                  location = "group:filetransfer.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:ftp.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:local.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:ssh.inc">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:form.inc">
+            </FileRef>
+            <FileRef
+               location = "group:graph.inc">
+            </FileRef>
+            <FileRef
+               location = "group:image.inc">
+            </FileRef>
+            <FileRef
+               location = "group:install.core.inc">
+            </FileRef>
+            <FileRef
+               location = "group:install.inc">
+            </FileRef>
+            <FileRef
+               location = "group:iso.inc">
+            </FileRef>
+            <FileRef
+               location = "group:json-encode.inc">
+            </FileRef>
+            <FileRef
+               location = "group:language.inc">
+            </FileRef>
+            <FileRef
+               location = "group:locale.inc">
+            </FileRef>
+            <FileRef
+               location = "group:lock.inc">
+            </FileRef>
+            <FileRef
+               location = "group:mail.inc">
+            </FileRef>
+            <FileRef
+               location = "group:menu.inc">
+            </FileRef>
+            <FileRef
+               location = "group:module.inc">
+            </FileRef>
+            <FileRef
+               location = "group:pager.inc">
+            </FileRef>
+            <FileRef
+               location = "group:password.inc">
+            </FileRef>
+            <FileRef
+               location = "group:path.inc">
+            </FileRef>
+            <FileRef
+               location = "group:registry.inc">
+            </FileRef>
+            <FileRef
+               location = "group:session.inc">
+            </FileRef>
+            <FileRef
+               location = "group:stream_wrappers.inc">
+            </FileRef>
+            <FileRef
+               location = "group:tablesort.inc">
+            </FileRef>
+            <FileRef
+               location = "group:theme.inc">
+            </FileRef>
+            <FileRef
+               location = "group:theme.maintenance.inc">
+            </FileRef>
+            <FileRef
+               location = "group:token.inc">
+            </FileRef>
+            <FileRef
+               location = "group:unicode.entities.inc">
+            </FileRef>
+            <FileRef
+               location = "group:unicode.inc">
+            </FileRef>
+            <FileRef
+               location = "group:update.inc">
+            </FileRef>
+            <FileRef
+               location = "group:updater.inc">
+            </FileRef>
+            <FileRef
+               location = "group:utility.inc">
+            </FileRef>
+            <FileRef
+               location = "group:xmlrpc.inc">
+            </FileRef>
+            <FileRef
+               location = "group:xmlrpcs.inc">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:index.html">
+         </FileRef>
+         <FileRef
+            location = "group:index.php">
+         </FileRef>
+         <FileRef
+            location = "group:INSTALL.mysql.txt">
+         </FileRef>
+         <FileRef
+            location = "group:INSTALL.pgsql.txt">
+         </FileRef>
+         <FileRef
+            location = "group:install.php">
+         </FileRef>
+         <FileRef
+            location = "group:INSTALL.sqlite.txt">
+         </FileRef>
+         <FileRef
+            location = "group:INSTALL.txt">
+         </FileRef>
+         <FileRef
+            location = "group:LICENSE.txt">
+         </FileRef>
+         <FileRef
+            location = "group:MAINTAINERS.txt">
+         </FileRef>
+         <Group
+            location = "group:misc"
+            name = "misc">
+            <FileRef
+               location = "group:ajax.js">
+            </FileRef>
+            <FileRef
+               location = "group:arrow-asc.png">
+            </FileRef>
+            <FileRef
+               location = "group:arrow-desc.png">
+            </FileRef>
+            <FileRef
+               location = "group:authorize.js">
+            </FileRef>
+            <FileRef
+               location = "group:autocomplete.js">
+            </FileRef>
+            <FileRef
+               location = "group:batch.js">
+            </FileRef>
+            <FileRef
+               location = "group:collapse.js">
+            </FileRef>
+            <FileRef
+               location = "group:configure.png">
+            </FileRef>
+            <FileRef
+               location = "group:draggable.png">
+            </FileRef>
+            <FileRef
+               location = "group:drupal.js">
+            </FileRef>
+            <FileRef
+               location = "group:druplicon.png">
+            </FileRef>
+            <Group
+               location = "group:farbtastic"
+               name = "farbtastic">
+               <FileRef
+                  location = "group:farbtastic.css">
+               </FileRef>
+               <FileRef
+                  location = "group:farbtastic.js">
+               </FileRef>
+               <FileRef
+                  location = "group:marker.png">
+               </FileRef>
+               <FileRef
+                  location = "group:mask.png">
+               </FileRef>
+               <FileRef
+                  location = "group:wheel.png">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:favicon.ico">
+            </FileRef>
+            <FileRef
+               location = "group:feed.png">
+            </FileRef>
+            <FileRef
+               location = "group:form.js">
+            </FileRef>
+            <FileRef
+               location = "group:forum-icons.png">
+            </FileRef>
+            <FileRef
+               location = "group:grippie.png">
+            </FileRef>
+            <FileRef
+               location = "group:help.png">
+            </FileRef>
+            <FileRef
+               location = "group:jquery.ba-bbq.js">
+            </FileRef>
+            <FileRef
+               location = "group:jquery.cookie.js">
+            </FileRef>
+            <FileRef
+               location = "group:jquery.form.js">
+            </FileRef>
+            <FileRef
+               location = "group:jquery.js">
+            </FileRef>
+            <FileRef
+               location = "group:jquery.once.js">
+            </FileRef>
+            <FileRef
+               location = "group:machine-name.js">
+            </FileRef>
+            <FileRef
+               location = "group:menu-collapsed-rtl.png">
+            </FileRef>
+            <FileRef
+               location = "group:menu-collapsed.png">
+            </FileRef>
+            <FileRef
+               location = "group:menu-expanded.png">
+            </FileRef>
+            <FileRef
+               location = "group:menu-leaf.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-16-error.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-16-help.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-16-info.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-16-ok.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-16-warning.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-24-error.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-24-help.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-24-info.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-24-ok.png">
+            </FileRef>
+            <FileRef
+               location = "group:message-24-warning.png">
+            </FileRef>
+            <FileRef
+               location = "group:permissions.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-black-135x42.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-black-80x15.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-black-88x31.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-blue-135x42.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-blue-80x15.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-blue-88x31.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-gray-135x42.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-gray-80x15.png">
+            </FileRef>
+            <FileRef
+               location = "group:powered-gray-88x31.png">
+            </FileRef>
+            <FileRef
+               location = "group:print-rtl.css">
+            </FileRef>
+            <FileRef
+               location = "group:print.css">
+            </FileRef>
+            <FileRef
+               location = "group:progress.gif">
+            </FileRef>
+            <FileRef
+               location = "group:progress.js">
+            </FileRef>
+            <FileRef
+               location = "group:states.js">
+            </FileRef>
+            <FileRef
+               location = "group:tabledrag.js">
+            </FileRef>
+            <FileRef
+               location = "group:tableheader.js">
+            </FileRef>
+            <FileRef
+               location = "group:tableselect.js">
+            </FileRef>
+            <FileRef
+               location = "group:textarea.js">
+            </FileRef>
+            <FileRef
+               location = "group:throbber.gif">
+            </FileRef>
+            <FileRef
+               location = "group:timezone.js">
+            </FileRef>
+            <FileRef
+               location = "group:tree-bottom.png">
+            </FileRef>
+            <FileRef
+               location = "group:tree.png">
+            </FileRef>
+            <Group
+               location = "group:ui"
+               name = "ui">
+               <Group
+                  location = "group:images"
+                  name = "images">
+                  <FileRef
+                     location = "group:ui-bg_flat_0_aaaaaa_40x100.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-bg_flat_75_ffffff_40x100.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-bg_glass_55_fbf9ee_1x400.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-bg_glass_65_ffffff_1x400.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-bg_glass_75_dadada_1x400.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-bg_glass_75_e6e6e6_1x400.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-bg_glass_95_fef1ec_1x400.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-bg_highlight-soft_75_cccccc_1x100.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons_222222_256x240.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons_2e83ff_256x240.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons_454545_256x240.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons_888888_256x240.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons_cd0a0a_256x240.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:jquery.effects.blind.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.bounce.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.clip.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.core.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.drop.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.explode.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.fade.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.fold.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.highlight.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.pulsate.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.scale.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.shake.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.slide.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.effects.transfer.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.accordion.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.accordion.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.autocomplete.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.autocomplete.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.button.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.button.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.core.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.core.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.datepicker.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.datepicker.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.dialog.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.dialog.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.draggable.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.droppable.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.mouse.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.position.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.progressbar.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.progressbar.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.resizable.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.resizable.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.selectable.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.selectable.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.slider.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.slider.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.sortable.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.tabs.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.tabs.min.js">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.theme.css">
+               </FileRef>
+               <FileRef
+                  location = "group:jquery.ui.widget.min.js">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:vertical-tabs-rtl.css">
+            </FileRef>
+            <FileRef
+               location = "group:vertical-tabs.css">
+            </FileRef>
+            <FileRef
+               location = "group:vertical-tabs.js">
+            </FileRef>
+            <FileRef
+               location = "group:watchdog-error.png">
+            </FileRef>
+            <FileRef
+               location = "group:watchdog-ok.png">
+            </FileRef>
+            <FileRef
+               location = "group:watchdog-warning.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:modules"
+            name = "modules">
+            <Group
+               location = "group:aggregator"
+               name = "aggregator">
+               <FileRef
+                  location = "group:aggregator-feed-source.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator-item.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator-summary-item.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator-summary-items.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator-wrapper.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.css">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.fetcher.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.info">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.install">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.module">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.parser.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.processor.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:aggregator.test">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:aggregator_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aggregator_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aggregator_test_atom.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aggregator_test_rss091.xml">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:block"
+               name = "block">
+               <FileRef
+                  location = "group:block-admin-display-form.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:block.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:block.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:block.css">
+               </FileRef>
+               <FileRef
+                  location = "group:block.info">
+               </FileRef>
+               <FileRef
+                  location = "group:block.install">
+               </FileRef>
+               <FileRef
+                  location = "group:block.js">
+               </FileRef>
+               <FileRef
+                  location = "group:block.module">
+               </FileRef>
+               <FileRef
+                  location = "group:block.test">
+               </FileRef>
+               <FileRef
+                  location = "group:block.tpl.php">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:block_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:block_test.module">
+                  </FileRef>
+                  <Group
+                     location = "group:themes"
+                     name = "themes">
+                     <Group
+                        location = "group:block_test_theme"
+                        name = "block_test_theme">
+                        <FileRef
+                           location = "group:block_test_theme.info">
+                        </FileRef>
+                        <FileRef
+                           location = "group:page.tpl.php">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:blog"
+               name = "blog">
+               <FileRef
+                  location = "group:blog.info">
+               </FileRef>
+               <FileRef
+                  location = "group:blog.install">
+               </FileRef>
+               <FileRef
+                  location = "group:blog.module">
+               </FileRef>
+               <FileRef
+                  location = "group:blog.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:blog.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:book"
+               name = "book">
+               <FileRef
+                  location = "group:book-all-books-block.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:book-export-html.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:book-navigation.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:book-node-export-html.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:book-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:book.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:book.css">
+               </FileRef>
+               <FileRef
+                  location = "group:book.info">
+               </FileRef>
+               <FileRef
+                  location = "group:book.install">
+               </FileRef>
+               <FileRef
+                  location = "group:book.js">
+               </FileRef>
+               <FileRef
+                  location = "group:book.module">
+               </FileRef>
+               <FileRef
+                  location = "group:book.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:book.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:color"
+               name = "color">
+               <FileRef
+                  location = "group:color-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:color.css">
+               </FileRef>
+               <FileRef
+                  location = "group:color.info">
+               </FileRef>
+               <FileRef
+                  location = "group:color.install">
+               </FileRef>
+               <FileRef
+                  location = "group:color.js">
+               </FileRef>
+               <FileRef
+                  location = "group:color.module">
+               </FileRef>
+               <FileRef
+                  location = "group:color.test">
+               </FileRef>
+               <Group
+                  location = "group:images"
+                  name = "images">
+                  <FileRef
+                     location = "group:hook-rtl.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hook.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:lock.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:preview.html">
+               </FileRef>
+               <FileRef
+                  location = "group:preview.js">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:comment"
+               name = "comment">
+               <FileRef
+                  location = "group:comment-node-form.js">
+               </FileRef>
+               <FileRef
+                  location = "group:comment-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:comment-wrapper.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.css">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.info">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.install">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.module">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.test">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.tokens.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:comment.tpl.php">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:contact"
+               name = "contact">
+               <FileRef
+                  location = "group:contact.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:contact.info">
+               </FileRef>
+               <FileRef
+                  location = "group:contact.install">
+               </FileRef>
+               <FileRef
+                  location = "group:contact.module">
+               </FileRef>
+               <FileRef
+                  location = "group:contact.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:contact.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:contextual"
+               name = "contextual">
+               <FileRef
+                  location = "group:contextual-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:contextual.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:contextual.css">
+               </FileRef>
+               <FileRef
+                  location = "group:contextual.info">
+               </FileRef>
+               <FileRef
+                  location = "group:contextual.js">
+               </FileRef>
+               <FileRef
+                  location = "group:contextual.module">
+               </FileRef>
+               <FileRef
+                  location = "group:contextual.test">
+               </FileRef>
+               <Group
+                  location = "group:images"
+                  name = "images">
+                  <FileRef
+                     location = "group:gear-select.png">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:dashboard"
+               name = "dashboard">
+               <FileRef
+                  location = "group:dashboard-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:dashboard.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:dashboard.css">
+               </FileRef>
+               <FileRef
+                  location = "group:dashboard.info">
+               </FileRef>
+               <FileRef
+                  location = "group:dashboard.install">
+               </FileRef>
+               <FileRef
+                  location = "group:dashboard.js">
+               </FileRef>
+               <FileRef
+                  location = "group:dashboard.module">
+               </FileRef>
+               <FileRef
+                  location = "group:dashboard.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:dblog"
+               name = "dblog">
+               <FileRef
+                  location = "group:dblog-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:dblog.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:dblog.css">
+               </FileRef>
+               <FileRef
+                  location = "group:dblog.info">
+               </FileRef>
+               <FileRef
+                  location = "group:dblog.install">
+               </FileRef>
+               <FileRef
+                  location = "group:dblog.module">
+               </FileRef>
+               <FileRef
+                  location = "group:dblog.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:field"
+               name = "field">
+               <FileRef
+                  location = "group:field.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:field.attach.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:field.crud.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:field.default.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:field.form.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:field.info">
+               </FileRef>
+               <FileRef
+                  location = "group:field.info.class.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:field.info.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:field.install">
+               </FileRef>
+               <FileRef
+                  location = "group:field.module">
+               </FileRef>
+               <FileRef
+                  location = "group:field.multilingual.inc">
+               </FileRef>
+               <Group
+                  location = "group:modules"
+                  name = "modules">
+                  <Group
+                     location = "group:field_sql_storage"
+                     name = "field_sql_storage">
+                     <FileRef
+                        location = "group:field_sql_storage.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:field_sql_storage.install">
+                     </FileRef>
+                     <FileRef
+                        location = "group:field_sql_storage.module">
+                     </FileRef>
+                     <FileRef
+                        location = "group:field_sql_storage.test">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:list"
+                     name = "list">
+                     <FileRef
+                        location = "group:list.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:list.install">
+                     </FileRef>
+                     <FileRef
+                        location = "group:list.module">
+                     </FileRef>
+                     <Group
+                        location = "group:tests"
+                        name = "tests">
+                        <FileRef
+                           location = "group:list.test">
+                        </FileRef>
+                        <FileRef
+                           location = "group:list_test.info">
+                        </FileRef>
+                        <FileRef
+                           location = "group:list_test.module">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <Group
+                     location = "group:number"
+                     name = "number">
+                     <FileRef
+                        location = "group:number.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:number.install">
+                     </FileRef>
+                     <FileRef
+                        location = "group:number.module">
+                     </FileRef>
+                     <FileRef
+                        location = "group:number.test">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:options"
+                     name = "options">
+                     <FileRef
+                        location = "group:options.api.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:options.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:options.module">
+                     </FileRef>
+                     <FileRef
+                        location = "group:options.test">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:text"
+                     name = "text">
+                     <FileRef
+                        location = "group:text.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:text.install">
+                     </FileRef>
+                     <FileRef
+                        location = "group:text.js">
+                     </FileRef>
+                     <FileRef
+                        location = "group:text.module">
+                     </FileRef>
+                     <FileRef
+                        location = "group:text.test">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:field.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:field_test.entity.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:field_test.field.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:field_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:field_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:field_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:field_test.storage.inc">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:theme"
+                  name = "theme">
+                  <FileRef
+                     location = "group:field-rtl.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:field.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:field.tpl.php">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:field_ui"
+               name = "field_ui">
+               <FileRef
+                  location = "group:field_ui-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:field_ui.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:field_ui.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:field_ui.css">
+               </FileRef>
+               <FileRef
+                  location = "group:field_ui.info">
+               </FileRef>
+               <FileRef
+                  location = "group:field_ui.js">
+               </FileRef>
+               <FileRef
+                  location = "group:field_ui.module">
+               </FileRef>
+               <FileRef
+                  location = "group:field_ui.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:file"
+               name = "file">
+               <FileRef
+                  location = "group:file.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:file.css">
+               </FileRef>
+               <FileRef
+                  location = "group:file.field.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:file.info">
+               </FileRef>
+               <FileRef
+                  location = "group:file.install">
+               </FileRef>
+               <FileRef
+                  location = "group:file.js">
+               </FileRef>
+               <FileRef
+                  location = "group:file.module">
+               </FileRef>
+               <Group
+                  location = "group:icons"
+                  name = "icons">
+                  <FileRef
+                     location = "group:application-octet-stream.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:application-pdf.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:application-x-executable.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:audio-x-generic.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image-x-generic.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:package-x-generic.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:text-html.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:text-plain.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:text-x-generic.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:text-x-script.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:video-x-generic.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x-office-document.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x-office-presentation.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x-office-spreadsheet.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:file.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:file_module_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:file_module_test.module">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:filter"
+               name = "filter">
+               <FileRef
+                  location = "group:filter.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.admin.js">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.css">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.info">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.install">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.js">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.module">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:filter.test">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:filter.url-input.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:filter.url-output.txt">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:forum"
+               name = "forum">
+               <FileRef
+                  location = "group:forum-icon.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:forum-list.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:forum-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:forum-submitted.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:forum-topic-list.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:forum.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:forum.css">
+               </FileRef>
+               <FileRef
+                  location = "group:forum.info">
+               </FileRef>
+               <FileRef
+                  location = "group:forum.install">
+               </FileRef>
+               <FileRef
+                  location = "group:forum.module">
+               </FileRef>
+               <FileRef
+                  location = "group:forum.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:forum.test">
+               </FileRef>
+               <FileRef
+                  location = "group:forums.tpl.php">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:help"
+               name = "help">
+               <FileRef
+                  location = "group:help-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:help.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:help.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:help.css">
+               </FileRef>
+               <FileRef
+                  location = "group:help.info">
+               </FileRef>
+               <FileRef
+                  location = "group:help.module">
+               </FileRef>
+               <FileRef
+                  location = "group:help.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:image"
+               name = "image">
+               <FileRef
+                  location = "group:image-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:image.admin.css">
+               </FileRef>
+               <FileRef
+                  location = "group:image.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:image.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:image.css">
+               </FileRef>
+               <FileRef
+                  location = "group:image.effects.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:image.field.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:image.info">
+               </FileRef>
+               <FileRef
+                  location = "group:image.install">
+               </FileRef>
+               <FileRef
+                  location = "group:image.module">
+               </FileRef>
+               <FileRef
+                  location = "group:image.test">
+               </FileRef>
+               <FileRef
+                  location = "group:sample.png">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:image_module_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image_module_test.module">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:locale"
+               name = "locale">
+               <FileRef
+                  location = "group:locale-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:locale.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:locale.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:locale.css">
+               </FileRef>
+               <FileRef
+                  location = "group:locale.datepicker.js">
+               </FileRef>
+               <FileRef
+                  location = "group:locale.info">
+               </FileRef>
+               <FileRef
+                  location = "group:locale.install">
+               </FileRef>
+               <FileRef
+                  location = "group:locale.module">
+               </FileRef>
+               <FileRef
+                  location = "group:locale.test">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:locale_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:locale_test.js">
+                  </FileRef>
+                  <FileRef
+                     location = "group:locale_test.module">
+                  </FileRef>
+                  <Group
+                     location = "group:translations"
+                     name = "translations">
+                     <FileRef
+                        location = "group:test.xx.po">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:menu"
+               name = "menu">
+               <FileRef
+                  location = "group:menu.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:menu.admin.js">
+               </FileRef>
+               <FileRef
+                  location = "group:menu.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:menu.css">
+               </FileRef>
+               <FileRef
+                  location = "group:menu.info">
+               </FileRef>
+               <FileRef
+                  location = "group:menu.install">
+               </FileRef>
+               <FileRef
+                  location = "group:menu.js">
+               </FileRef>
+               <FileRef
+                  location = "group:menu.module">
+               </FileRef>
+               <FileRef
+                  location = "group:menu.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:node"
+               name = "node">
+               <FileRef
+                  location = "group:content_types.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:content_types.js">
+               </FileRef>
+               <FileRef
+                  location = "group:node.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:node.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:node.css">
+               </FileRef>
+               <FileRef
+                  location = "group:node.info">
+               </FileRef>
+               <FileRef
+                  location = "group:node.install">
+               </FileRef>
+               <FileRef
+                  location = "group:node.js">
+               </FileRef>
+               <FileRef
+                  location = "group:node.module">
+               </FileRef>
+               <FileRef
+                  location = "group:node.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:node.test">
+               </FileRef>
+               <FileRef
+                  location = "group:node.tokens.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:node.tpl.php">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:node_access_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:node_access_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:node_access_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:node_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:node_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:node_test_exception.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:node_test_exception.module">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:openid"
+               name = "openid">
+               <FileRef
+                  location = "group:login-bg.png">
+               </FileRef>
+               <FileRef
+                  location = "group:openid-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.css">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.info">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.install">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.js">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.module">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:openid.test">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:openid_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:openid_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:openid_test.module">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:overlay"
+               name = "overlay">
+               <Group
+                  location = "group:images"
+                  name = "images">
+                  <FileRef
+                     location = "group:background.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:close-rtl.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:close.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:overlay-child-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay-child.css">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay-child.js">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay-parent.css">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay-parent.js">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay.info">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay.install">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay.module">
+               </FileRef>
+               <FileRef
+                  location = "group:overlay.tpl.php">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:path"
+               name = "path">
+               <FileRef
+                  location = "group:path.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:path.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:path.info">
+               </FileRef>
+               <FileRef
+                  location = "group:path.js">
+               </FileRef>
+               <FileRef
+                  location = "group:path.module">
+               </FileRef>
+               <FileRef
+                  location = "group:path.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:php"
+               name = "php">
+               <FileRef
+                  location = "group:php.info">
+               </FileRef>
+               <FileRef
+                  location = "group:php.install">
+               </FileRef>
+               <FileRef
+                  location = "group:php.module">
+               </FileRef>
+               <FileRef
+                  location = "group:php.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:poll"
+               name = "poll">
+               <FileRef
+                  location = "group:poll-bar--block.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:poll-bar.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:poll-results--block.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:poll-results.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:poll-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:poll-vote.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:poll.css">
+               </FileRef>
+               <FileRef
+                  location = "group:poll.info">
+               </FileRef>
+               <FileRef
+                  location = "group:poll.install">
+               </FileRef>
+               <FileRef
+                  location = "group:poll.module">
+               </FileRef>
+               <FileRef
+                  location = "group:poll.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:poll.test">
+               </FileRef>
+               <FileRef
+                  location = "group:poll.tokens.inc">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:profile"
+               name = "profile">
+               <FileRef
+                  location = "group:profile-block.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:profile-listing.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:profile-wrapper.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:profile.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:profile.css">
+               </FileRef>
+               <FileRef
+                  location = "group:profile.info">
+               </FileRef>
+               <FileRef
+                  location = "group:profile.install">
+               </FileRef>
+               <FileRef
+                  location = "group:profile.js">
+               </FileRef>
+               <FileRef
+                  location = "group:profile.module">
+               </FileRef>
+               <FileRef
+                  location = "group:profile.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:profile.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:rdf"
+               name = "rdf">
+               <FileRef
+                  location = "group:rdf.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:rdf.info">
+               </FileRef>
+               <FileRef
+                  location = "group:rdf.install">
+               </FileRef>
+               <FileRef
+                  location = "group:rdf.module">
+               </FileRef>
+               <FileRef
+                  location = "group:rdf.test">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:rdf_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rdf_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rdf_test.module">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:README.txt">
+            </FileRef>
+            <Group
+               location = "group:search"
+               name = "search">
+               <FileRef
+                  location = "group:search-block-form.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:search-result.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:search-results.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:search-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:search.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:search.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:search.css">
+               </FileRef>
+               <FileRef
+                  location = "group:search.extender.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:search.info">
+               </FileRef>
+               <FileRef
+                  location = "group:search.install">
+               </FileRef>
+               <FileRef
+                  location = "group:search.module">
+               </FileRef>
+               <FileRef
+                  location = "group:search.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:search.test">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:search_embedded_form.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:search_embedded_form.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:search_extra_type.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:search_extra_type.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UnicodeTest.txt">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:shortcut"
+               name = "shortcut">
+               <FileRef
+                  location = "group:shortcut-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.admin.css">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.admin.js">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.css">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.info">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.install">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.module">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.png">
+               </FileRef>
+               <FileRef
+                  location = "group:shortcut.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:simpletest"
+               name = "simpletest">
+               <FileRef
+                  location = "group:drupal_web_test_case.php">
+               </FileRef>
+               <Group
+                  location = "group:files"
+                  name = "files">
+                  <Group
+                     location = "group:css_test_files"
+                     name = "css_test_files">
+                     <FileRef
+                        location = "group:comment_hacks.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:comment_hacks.css.optimized.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:comment_hacks.css.unoptimized.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:css_input_with_import.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:css_input_with_import.css.optimized.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:css_input_with_import.css.unoptimized.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:css_input_without_import.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:css_input_without_import.css.optimized.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:css_input_without_import.css.unoptimized.css">
+                     </FileRef>
+                     <Group
+                        location = "group:css_subfolder"
+                        name = "css_subfolder">
+                        <FileRef
+                           location = "group:css_input_with_import.css">
+                        </FileRef>
+                        <FileRef
+                           location = "group:css_input_with_import.css.optimized.css">
+                        </FileRef>
+                        <FileRef
+                           location = "group:css_input_with_import.css.unoptimized.css">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:import1.css">
+                     </FileRef>
+                     <FileRef
+                        location = "group:import2.css">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:html-1.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:html-2.html">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image-1.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image-2.jpg">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image-test.gif">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image-test.jpg">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image-test.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:javascript-1.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:javascript-2.script">
+                  </FileRef>
+                  <FileRef
+                     location = "group:php-1.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:php-2.php">
+                  </FileRef>
+                  <FileRef
+                     location = "group:README.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sql-1.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sql-2.sql">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:lib"
+                  name = "lib">
+                  <Group
+                     location = "group:Drupal"
+                     name = "Drupal">
+                     <Group
+                        location = "group:simpletest"
+                        name = "simpletest">
+                        <Group
+                           location = "group:Tests"
+                           name = "Tests">
+                           <FileRef
+                              location = "group:PSR0WebTest.php">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:simpletest.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:simpletest.css">
+               </FileRef>
+               <FileRef
+                  location = "group:simpletest.info">
+               </FileRef>
+               <FileRef
+                  location = "group:simpletest.install">
+               </FileRef>
+               <FileRef
+                  location = "group:simpletest.js">
+               </FileRef>
+               <FileRef
+                  location = "group:simpletest.module">
+               </FileRef>
+               <FileRef
+                  location = "group:simpletest.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:simpletest.test">
+               </FileRef>
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:actions.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:actions_loop_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:actions_loop_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:actions_loop_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ajax.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ajax_forms_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ajax_forms_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ajax_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ajax_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:batch.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:batch_test.callbacks.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:batch_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:batch_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bootstrap.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cache.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_test.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_test.print.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_test_cron_helper.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_test_cron_helper.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_test_info.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:database_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:database_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:database_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:database_test.test">
+                  </FileRef>
+                  <Group
+                     location = "group:drupal_system_listing_compatible_test"
+                     name = "drupal_system_listing_compatible_test">
+                     <FileRef
+                        location = "group:drupal_system_listing_compatible_test.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal_system_listing_compatible_test.module">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:drupal_system_listing_incompatible_test"
+                     name = "drupal_system_listing_incompatible_test">
+                     <FileRef
+                        location = "group:drupal_system_listing_incompatible_test.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal_system_listing_incompatible_test.module">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:entity_cache_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_cache_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_cache_test_dependency.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_cache_test_dependency.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_crud_hook_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_crud_hook_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_crud_hook_test.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_query.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_query_access_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:entity_query_access_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:error.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:error_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:error_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:file.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:file_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:file_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:filetransfer.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:filter_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:filter_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:form.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:form_test.file.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:form_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:form_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:graph.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:http.php">
+                  </FileRef>
+                  <FileRef
+                     location = "group:https.php">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:image_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:lock.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mail.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:menu.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:menu_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:menu_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:module.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:module_test.file.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:module_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:module_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:module_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pager.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:password.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:path.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:path_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:path_test.module">
+                  </FileRef>
+                  <Group
+                     location = "group:psr_0_test"
+                     name = "psr_0_test">
+                     <Group
+                        location = "group:lib"
+                        name = "lib">
+                        <Group
+                           location = "group:Drupal"
+                           name = "Drupal">
+                           <Group
+                              location = "group:psr_0_test"
+                              name = "psr_0_test">
+                              <Group
+                                 location = "group:Tests"
+                                 name = "Tests">
+                                 <FileRef
+                                    location = "group:ExampleTest.php">
+                                 </FileRef>
+                                 <Group
+                                    location = "group:Nested"
+                                    name = "Nested">
+                                    <FileRef
+                                       location = "group:NestedExampleTest.php">
+                                    </FileRef>
+                                 </Group>
+                              </Group>
+                           </Group>
+                        </Group>
+                     </Group>
+                     <FileRef
+                        location = "group:psr_0_test.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:psr_0_test.module">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:registry.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:requirements1_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:requirements1_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:requirements1_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:requirements2_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:requirements2_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:schema.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:session.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:session_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:session_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system.base.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_dependencies_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_dependencies_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_incompatible_core_version_dependencies_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_incompatible_core_version_dependencies_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_incompatible_core_version_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_incompatible_core_version_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_incompatible_module_version_dependencies_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_incompatible_module_version_dependencies_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_incompatible_module_version_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_incompatible_module_version_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:system_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tablesort.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:taxonomy_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:taxonomy_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:taxonomy_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:theme.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:theme_test.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:theme_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:theme_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:theme_test.template_test.tpl.php">
+                  </FileRef>
+                  <Group
+                     location = "group:themes"
+                     name = "themes">
+                     <Group
+                        location = "group:test_basetheme"
+                        name = "test_basetheme">
+                        <FileRef
+                           location = "group:test_basetheme.info">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:test_subtheme"
+                        name = "test_subtheme">
+                        <FileRef
+                           location = "group:test_subtheme.info">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:test_theme"
+                        name = "test_theme">
+                        <FileRef
+                           location = "group:template.php">
+                        </FileRef>
+                        <FileRef
+                           location = "group:test_theme.info">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:unicode.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_script_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_script_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_script_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_1.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_1.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_1.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_2.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_2.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_2.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_3.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_3.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_3.module">
+                  </FileRef>
+                  <Group
+                     location = "group:upgrade"
+                     name = "upgrade">
+                     <FileRef
+                        location = "group:drupal-6.bare.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.comments.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.duplicate-permission.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.filled.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.forum.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.locale.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.menu.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.node_type_broken.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.translatable.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.trigger.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.upload.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.user-no-password-token.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-6.user-password-token.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-7.aggregator.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-7.bare.minimal.database.php.gz">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-7.bare.standard_all.database.php.gz">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-7.field.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-7.filled.minimal.database.php.gz">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-7.filled.standard_all.database.php.gz">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal-7.trigger.database.php">
+                     </FileRef>
+                     <FileRef
+                        location = "group:update.aggregator.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:update.field.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:update.trigger.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:update.user.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.comment.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.filter.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.forum.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.locale.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.menu.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.node.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.poll.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.taxonomy.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.translatable.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.trigger.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.upload.test">
+                     </FileRef>
+                     <FileRef
+                        location = "group:upgrade.user.test">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:url_alter_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:url_alter_test.install">
+                  </FileRef>
+                  <FileRef
+                     location = "group:url_alter_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:xmlrpc.test">
+                  </FileRef>
+                  <FileRef
+                     location = "group:xmlrpc_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:xmlrpc_test.module">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:statistics"
+               name = "statistics">
+               <FileRef
+                  location = "group:statistics.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:statistics.info">
+               </FileRef>
+               <FileRef
+                  location = "group:statistics.install">
+               </FileRef>
+               <FileRef
+                  location = "group:statistics.js">
+               </FileRef>
+               <FileRef
+                  location = "group:statistics.module">
+               </FileRef>
+               <FileRef
+                  location = "group:statistics.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:statistics.php">
+               </FileRef>
+               <FileRef
+                  location = "group:statistics.test">
+               </FileRef>
+               <FileRef
+                  location = "group:statistics.tokens.inc">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:syslog"
+               name = "syslog">
+               <FileRef
+                  location = "group:syslog.info">
+               </FileRef>
+               <FileRef
+                  location = "group:syslog.install">
+               </FileRef>
+               <FileRef
+                  location = "group:syslog.module">
+               </FileRef>
+               <FileRef
+                  location = "group:syslog.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:system"
+               name = "system">
+               <FileRef
+                  location = "group:html.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:image.gd.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:language.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:maintenance-page.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:page.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:region.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:system.admin-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.admin.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:system.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:system.archiver.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:system.base-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.base.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.cron.js">
+               </FileRef>
+               <FileRef
+                  location = "group:system.info">
+               </FileRef>
+               <FileRef
+                  location = "group:system.install">
+               </FileRef>
+               <FileRef
+                  location = "group:system.js">
+               </FileRef>
+               <FileRef
+                  location = "group:system.mail.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:system.maintenance.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.menus-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.menus.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.messages-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.messages.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.module">
+               </FileRef>
+               <FileRef
+                  location = "group:system.queue.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:system.tar.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:system.test">
+               </FileRef>
+               <FileRef
+                  location = "group:system.theme-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.theme.css">
+               </FileRef>
+               <FileRef
+                  location = "group:system.tokens.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:system.updater.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:theme.api.php">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:taxonomy"
+               name = "taxonomy">
+               <FileRef
+                  location = "group:taxonomy-term.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.css">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.info">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.install">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.js">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.module">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.test">
+               </FileRef>
+               <FileRef
+                  location = "group:taxonomy.tokens.inc">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:toolbar"
+               name = "toolbar">
+               <FileRef
+                  location = "group:toolbar-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:toolbar.css">
+               </FileRef>
+               <FileRef
+                  location = "group:toolbar.info">
+               </FileRef>
+               <FileRef
+                  location = "group:toolbar.js">
+               </FileRef>
+               <FileRef
+                  location = "group:toolbar.module">
+               </FileRef>
+               <FileRef
+                  location = "group:toolbar.png">
+               </FileRef>
+               <FileRef
+                  location = "group:toolbar.tpl.php">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:tracker"
+               name = "tracker">
+               <FileRef
+                  location = "group:tracker.css">
+               </FileRef>
+               <FileRef
+                  location = "group:tracker.info">
+               </FileRef>
+               <FileRef
+                  location = "group:tracker.install">
+               </FileRef>
+               <FileRef
+                  location = "group:tracker.module">
+               </FileRef>
+               <FileRef
+                  location = "group:tracker.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:tracker.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:translation"
+               name = "translation">
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:translation_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:translation_test.module">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:translation.info">
+               </FileRef>
+               <FileRef
+                  location = "group:translation.module">
+               </FileRef>
+               <FileRef
+                  location = "group:translation.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:translation.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:trigger"
+               name = "trigger">
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:trigger_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:trigger_test.module">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:trigger.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:trigger.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:trigger.info">
+               </FileRef>
+               <FileRef
+                  location = "group:trigger.install">
+               </FileRef>
+               <FileRef
+                  location = "group:trigger.module">
+               </FileRef>
+               <FileRef
+                  location = "group:trigger.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:update"
+               name = "update">
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:aaa_update_test.1_0.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aaa_update_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aaa_update_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aaa_update_test.no-releases.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aaa_update_test.tar.gz">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bbb_update_test.1_0.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bbb_update_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bbb_update_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ccc_update_test.1_0.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ccc_update_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ccc_update_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:drupal.0.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:drupal.1.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:drupal.2-sec.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:drupal.dev.xml">
+                  </FileRef>
+                  <Group
+                     location = "group:themes"
+                     name = "themes">
+                     <Group
+                        location = "group:update_test_basetheme"
+                        name = "update_test_basetheme">
+                        <FileRef
+                           location = "group:update_test_basetheme.info">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:update_test_subtheme"
+                        name = "update_test_subtheme">
+                        <FileRef
+                           location = "group:update_test_subtheme.info">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:update_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test.module">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_basetheme.1_1-sec.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:update_test_subtheme.1_0.xml">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:update-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:update.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:update.authorize.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:update.compare.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:update.css">
+               </FileRef>
+               <FileRef
+                  location = "group:update.fetch.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:update.info">
+               </FileRef>
+               <FileRef
+                  location = "group:update.install">
+               </FileRef>
+               <FileRef
+                  location = "group:update.manager.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:update.module">
+               </FileRef>
+               <FileRef
+                  location = "group:update.report.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:update.settings.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:update.test">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:user"
+               name = "user">
+               <Group
+                  location = "group:tests"
+                  name = "tests">
+                  <FileRef
+                     location = "group:user_form_test.info">
+                  </FileRef>
+                  <FileRef
+                     location = "group:user_form_test.module">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:user-picture.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:user-profile-category.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:user-profile-item.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:user-profile.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:user-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:user.admin.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:user.api.php">
+               </FileRef>
+               <FileRef
+                  location = "group:user.css">
+               </FileRef>
+               <FileRef
+                  location = "group:user.info">
+               </FileRef>
+               <FileRef
+                  location = "group:user.install">
+               </FileRef>
+               <FileRef
+                  location = "group:user.js">
+               </FileRef>
+               <FileRef
+                  location = "group:user.module">
+               </FileRef>
+               <FileRef
+                  location = "group:user.pages.inc">
+               </FileRef>
+               <FileRef
+                  location = "group:user.permissions.js">
+               </FileRef>
+               <FileRef
+                  location = "group:user.test">
+               </FileRef>
+               <FileRef
+                  location = "group:user.tokens.inc">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:profiles"
+            name = "profiles">
+            <Group
+               location = "group:minimal"
+               name = "minimal">
+               <FileRef
+                  location = "group:minimal.info">
+               </FileRef>
+               <FileRef
+                  location = "group:minimal.install">
+               </FileRef>
+               <FileRef
+                  location = "group:minimal.profile">
+               </FileRef>
+               <Group
+                  location = "group:translations"
+                  name = "translations">
+                  <FileRef
+                     location = "group:README.txt">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:standard"
+               name = "standard">
+               <FileRef
+                  location = "group:standard.info">
+               </FileRef>
+               <FileRef
+                  location = "group:standard.install">
+               </FileRef>
+               <FileRef
+                  location = "group:standard.profile">
+               </FileRef>
+               <Group
+                  location = "group:translations"
+                  name = "translations">
+                  <FileRef
+                     location = "group:README.txt">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:testing"
+               name = "testing">
+               <Group
+                  location = "group:modules"
+                  name = "modules">
+                  <Group
+                     location = "group:drupal_system_listing_compatible_test"
+                     name = "drupal_system_listing_compatible_test">
+                     <FileRef
+                        location = "group:drupal_system_listing_compatible_test.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal_system_listing_compatible_test.module">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal_system_listing_compatible_test.test">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:drupal_system_listing_incompatible_test"
+                     name = "drupal_system_listing_incompatible_test">
+                     <FileRef
+                        location = "group:drupal_system_listing_incompatible_test.info">
+                     </FileRef>
+                     <FileRef
+                        location = "group:drupal_system_listing_incompatible_test.module">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:testing.info">
+               </FileRef>
+               <FileRef
+                  location = "group:testing.install">
+               </FileRef>
+               <FileRef
+                  location = "group:testing.profile">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:README.txt">
+         </FileRef>
+         <FileRef
+            location = "group:robots.txt">
+         </FileRef>
+         <Group
+            location = "group:scripts"
+            name = "scripts">
+            <FileRef
+               location = "group:code-clean.sh">
+            </FileRef>
+            <FileRef
+               location = "group:cron-curl.sh">
+            </FileRef>
+            <FileRef
+               location = "group:cron-lynx.sh">
+            </FileRef>
+            <FileRef
+               location = "group:drupal.sh">
+            </FileRef>
+            <FileRef
+               location = "group:dump-database-d6.sh">
+            </FileRef>
+            <FileRef
+               location = "group:dump-database-d7.sh">
+            </FileRef>
+            <FileRef
+               location = "group:generate-d6-content.sh">
+            </FileRef>
+            <FileRef
+               location = "group:generate-d7-content.sh">
+            </FileRef>
+            <FileRef
+               location = "group:password-hash.sh">
+            </FileRef>
+            <FileRef
+               location = "group:run-tests.sh">
+            </FileRef>
+            <FileRef
+               location = "group:test.script">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:sites"
+            name = "sites">
+            <Group
+               location = "group:all"
+               name = "all">
+               <Group
+                  location = "group:modules"
+                  name = "modules">
+                  <FileRef
+                     location = "group:README.txt">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:themes"
+                  name = "themes">
+                  <FileRef
+                     location = "group:README.txt">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:default"
+               name = "default">
+               <FileRef
+                  location = "group:default.settings.php">
+               </FileRef>
+               <Group
+                  location = "group:files"
+                  name = "files">
+               </Group>
+               <FileRef
+                  location = "group:settings.php">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:example.sites.php">
+            </FileRef>
+            <FileRef
+               location = "group:README.txt">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:themes"
+            name = "themes">
+            <Group
+               location = "group:bartik"
+               name = "bartik">
+               <FileRef
+                  location = "group:bartik.info">
+               </FileRef>
+               <Group
+                  location = "group:color"
+                  name = "color">
+                  <FileRef
+                     location = "group:base.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:color.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview.html">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview.js">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:css"
+                  name = "css">
+                  <FileRef
+                     location = "group:colors.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ie-rtl.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ie.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ie6.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:layout-rtl.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:layout.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:maintenance-page.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:print.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:style-rtl.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:style.css">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:images"
+                  name = "images">
+                  <FileRef
+                     location = "group:add.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:buttons.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:comment-arrow-rtl.gif">
+                  </FileRef>
+                  <FileRef
+                     location = "group:comment-arrow.gif">
+                  </FileRef>
+                  <FileRef
+                     location = "group:search-button.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabs-border.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:logo.png">
+               </FileRef>
+               <FileRef
+                  location = "group:screenshot.png">
+               </FileRef>
+               <FileRef
+                  location = "group:template.php">
+               </FileRef>
+               <Group
+                  location = "group:templates"
+                  name = "templates">
+                  <FileRef
+                     location = "group:comment-wrapper.tpl.php">
+                  </FileRef>
+                  <FileRef
+                     location = "group:comment.tpl.php">
+                  </FileRef>
+                  <FileRef
+                     location = "group:maintenance-page.tpl.php">
+                  </FileRef>
+                  <FileRef
+                     location = "group:node.tpl.php">
+                  </FileRef>
+                  <FileRef
+                     location = "group:page.tpl.php">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:engines"
+               name = "engines">
+               <Group
+                  location = "group:phptemplate"
+                  name = "phptemplate">
+                  <FileRef
+                     location = "group:phptemplate.engine">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:garland"
+               name = "garland">
+               <Group
+                  location = "group:color"
+                  name = "color">
+                  <FileRef
+                     location = "group:base.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:color.inc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview.css">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:comment.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:fix-ie-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:fix-ie.css">
+               </FileRef>
+               <FileRef
+                  location = "group:garland.info">
+               </FileRef>
+               <Group
+                  location = "group:images"
+                  name = "images">
+                  <FileRef
+                     location = "group:bg-bar-white.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bg-bar.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bg-content-left.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bg-content-right.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bg-content.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bg-navigation-item-hover.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bg-navigation-item.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bg-navigation.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bg-tab.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:body.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gradient-inner.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:menu-collapsed-rtl.gif">
+                  </FileRef>
+                  <FileRef
+                     location = "group:menu-collapsed.gif">
+                  </FileRef>
+                  <FileRef
+                     location = "group:menu-expanded.gif">
+                  </FileRef>
+                  <FileRef
+                     location = "group:menu-leaf.gif">
+                  </FileRef>
+                  <FileRef
+                     location = "group:task-list.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:logo.png">
+               </FileRef>
+               <FileRef
+                  location = "group:maintenance-page.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:node.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:page.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:print.css">
+               </FileRef>
+               <FileRef
+                  location = "group:screenshot.png">
+               </FileRef>
+               <FileRef
+                  location = "group:style-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:style.css">
+               </FileRef>
+               <FileRef
+                  location = "group:template.php">
+               </FileRef>
+               <FileRef
+                  location = "group:theme-settings.php">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:README.txt">
+            </FileRef>
+            <Group
+               location = "group:seven"
+               name = "seven">
+               <FileRef
+                  location = "group:ie.css">
+               </FileRef>
+               <FileRef
+                  location = "group:ie6.css">
+               </FileRef>
+               <FileRef
+                  location = "group:ie7.css">
+               </FileRef>
+               <Group
+                  location = "group:images"
+                  name = "images">
+                  <FileRef
+                     location = "group:add.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arrow-asc.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arrow-desc.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arrow-next.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arrow-prev.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:buttons.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fc-rtl.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fc.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:list-item-rtl.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:list-item.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:task-check.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:task-item-rtl.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:task-item.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons-222222-256x240.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons-454545-256x240.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons-800000-256x240.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons-888888-256x240.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui-icons-ffffff-256x240.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:jquery.ui.theme.css">
+               </FileRef>
+               <FileRef
+                  location = "group:logo.png">
+               </FileRef>
+               <FileRef
+                  location = "group:maintenance-page.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:page.tpl.php">
+               </FileRef>
+               <FileRef
+                  location = "group:reset.css">
+               </FileRef>
+               <FileRef
+                  location = "group:screenshot.png">
+               </FileRef>
+               <FileRef
+                  location = "group:seven.info">
+               </FileRef>
+               <FileRef
+                  location = "group:style-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:style.css">
+               </FileRef>
+               <FileRef
+                  location = "group:template.php">
+               </FileRef>
+               <FileRef
+                  location = "group:vertical-tabs-rtl.css">
+               </FileRef>
+               <FileRef
+                  location = "group:vertical-tabs.css">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:stark"
+               name = "stark">
+               <FileRef
+                  location = "group:layout.css">
+               </FileRef>
+               <FileRef
+                  location = "group:logo.png">
+               </FileRef>
+               <FileRef
+                  location = "group:README.txt">
+               </FileRef>
+               <FileRef
+                  location = "group:screenshot.png">
+               </FileRef>
+               <FileRef
+                  location = "group:stark.info">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:update.php">
+         </FileRef>
+         <FileRef
+            location = "group:UPGRADE.txt">
+         </FileRef>
+         <FileRef
+            location = "group:web.config">
+         </FileRef>
+         <FileRef
+            location = "group:xmlrpc.php">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:file1.txt">
+      </FileRef>
+      <FileRef
+         location = "group:file3.txt">
+      </FileRef>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <FileRef
+         location = "group:TestCoDemoSite.xcworkspace">
+      </FileRef>
+   </Group>
+</Workspace>
