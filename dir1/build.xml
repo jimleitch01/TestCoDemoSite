@@ -11,7 +11,7 @@
        
     <property name="message" value="Hello World!"/>
     <property name="color" value="lemon"/>
-    <property name="message" value="web01"/>
+    <property name="servertype" value="web01"/>
     
     <target name="shelltest">
         <echo>
@@ -21,7 +21,7 @@
         
         <exec executable="bash">
             <arg value="-c"/>
-            <arg value=". ~/keystonerc_admin; nova boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{servertype}"/>
+            <arg value=". ~/keystonerc_admin; nova boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-${servertype} | id"/>
         </exec>
         
         
