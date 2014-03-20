@@ -11,6 +11,9 @@
          location = "group:build.xml"
          assignedFileDataType = "public.xml">
       </FileRef>
+      <FileRef
+         location = "group:ant-bash-test.xml">
+      </FileRef>
       <Group
          location = "group:dir1"
          name = "dir1">
