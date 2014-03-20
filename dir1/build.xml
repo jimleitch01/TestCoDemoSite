@@ -19,7 +19,7 @@
         </echo>
         
         <exec executable="bash">
-            <arg value="instance-o-mizer.bash"/>
+            <arg value="../instance-o-mizer.bash"/>
             <arg value="lemon"/>
             <arg value="web03"/>
         </exec>
