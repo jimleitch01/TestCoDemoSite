@@ -15,7 +15,7 @@
          location = "group:dir1"
          name = "dir1">
          <FileRef
-            location = "group:file2.txt">
+            location = "group:../../../build.xml">
          </FileRef>
       </Group>
       <Group
