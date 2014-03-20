@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TestCoDemoSite" default="shelltest" basedir=".">
+    <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+    
+    <property name="src" value="src"/>
+    
+    
+    <description>
+        Jim Some Nice Text Here
+    </description>
+    
+    <property name="message" value="Hello World!"/>
+    
+    <target name="shelltest">
+        <echo>
+            Starting shelltest
+        </echo>
+        <shellscript shell="bash">
+                    instanceID="nova boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{servertype} | grep id"
+        </shellscript>
+    
+        <echo>
+            Ending shelltest
+        </echo>
+    
+    </target>
+    
+    
+    
+ 
+    <target name="fortest">
+        <echo message="Our servers are::"/>
+        
+        <for list="lb,web01,web02,mysql" param="servertype">
+            <sequential>
+                <echo>Server @{servertype}</echo>
+                <echo>Color ${color}</echo>
+                
+                
+                <shellscript shell="bash">
+                    instanceID="nova boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-@{servertype} | grep id"
+                </shellscript>
+                    
+                <echo>
+                    ${instanceID}
+                </echo>
+                
+            </sequential>
+        </for>
+    </target>
+    
+</project>
