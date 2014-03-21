@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #  instance-o-mizer.bash
-#  deleetme
+#  
 #
 #  Created by Jim Leitch on 3/17/14.
 #
@@ -16,7 +16,7 @@ INSTANCENAME=${COLOR}-${SERVERTYPE}
 #For Dennis
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
-	echo Instance name $INSTANCENAME already exixts, bombing out !
+	echo Instance name $INSTANCENAME already exists, bombing out !
 	exit 1
 fi
 	
