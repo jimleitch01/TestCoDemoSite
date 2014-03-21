@@ -22,15 +22,18 @@ echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 
 #DNS
 
-grep STATIC /etc/hosts > /etc/hosts
+cp /etc/hosts /etc/hosts.tmp
+grep STATIC /etc/hosts.tmp > /etc/hosts
+rm /etc/hosts/tmp
+nova list | grep ACTIVE | awk '{print $9" "$4}' >> /etc/hosts
 
-for INSTANCE in `nova list | grep ACTIVE | awk '{print $2}'`;
-do
-
-	DNSNAME=`nova show $INSTANCE | grep name | awk '{print $4}'`
-	DNSIP=`nova show $INSTANCE | grep novanetwork | awk '{print $6}'`
-    echo $DNSIP $DNSNAME >> /etc/hosts
-done
+#for INSTANCE in `nova list | grep ACTIVE | awk '{print $2}'`;
+#do
+#
+#	DNSNAME=`nova show $INSTANCE | grep name | awk '{print $4}'`
+#	DNSIP=`nova show $INSTANCE | grep novanetwork | awk '{print $6}'`
+#   #echo $DNSIP $DNSNAME >> /etc/hosts
+#done
 
 
 
