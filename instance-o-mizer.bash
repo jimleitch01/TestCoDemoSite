@@ -29,11 +29,11 @@ echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 
 #DNS
 
-cp /etc/hosts /etc/hosts.tmp
-grep STATIC /etc/hosts.tmp > /etc/hosts
-rm /etc/hosts.tmp
-nova list | grep ACTIVE | awk '{print $9" "$4}' >> /etc/hosts
-/etc/init.d/dnsmasq reload
+sudo cp /etc/hosts /etc/hosts.tmp
+sudo grep STATIC /etc/hosts.tmp > /etc/hosts
+sudo rm /etc/hosts.tmp
+sudo "nova list | grep ACTIVE | awk '{print $9" "$4}' >> /etc/hosts"
+sudo /etc/init.d/dnsmasq reload
 
 #for INSTANCE in `nova list | grep ACTIVE | awk '{print $2}'`;
 #do
