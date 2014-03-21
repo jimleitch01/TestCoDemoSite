@@ -24,7 +24,7 @@ echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 
 cp /etc/hosts /etc/hosts.tmp
 grep STATIC /etc/hosts.tmp > /etc/hosts
-rm /etc/hosts/tmp
+rm /etc/hosts.tmp
 nova list | grep ACTIVE | awk '{print $9" "$4}' >> /etc/hosts
 
 #for INSTANCE in `nova list | grep ACTIVE | awk '{print $2}'`;
