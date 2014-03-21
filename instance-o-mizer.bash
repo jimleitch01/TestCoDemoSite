@@ -13,7 +13,7 @@ INSTANCENAME=${COLOR}-${SERVERTYPE}
 
 . ~/keystonerc_admin
 
-#For Dennis
+#For Dennis!
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
 	echo Instance name $INSTANCENAME already exists, bombing out !
