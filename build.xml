@@ -10,6 +10,7 @@
     </description>
     
     <property name="message" value="Hello World!"/>
+    <property name="color" value="melon"/>
     
     <target name="welcome">
         <echo>
