@@ -15,7 +15,7 @@ SERVERTYPE=$2
 
 
 INSTANCEID=`nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
-nova show $INSTANCEID | grep novanetwork | awk '{print $6}'
+sleep 3
 INSTANCEFLOATINGIP=`nova show $INSTANCEID | grep novanetwork | awk '{print $6}'`
 
 echo INSTANCEID=$INSTANCEID
