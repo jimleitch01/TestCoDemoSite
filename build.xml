@@ -28,7 +28,6 @@
                
 
         <exec executable="bash">
-            <arg value="-x "/>
             <arg value="./instance-o-mizer.bash"/>
             <arg value="${color}"/>
             <arg value="@{servertype}"/>
