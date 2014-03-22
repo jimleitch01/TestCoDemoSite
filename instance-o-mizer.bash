@@ -28,7 +28,7 @@ INSTANCEFLOATINGIP=`nova show $INSTANCEID | grep novanetwork | awk '{print $6}'`
 
 echo INSTANCEID=$INSTANCEID
 echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
-exit
+
 #DNS
 
 echo Refreshing DNS
