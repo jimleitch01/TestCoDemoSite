@@ -21,7 +21,7 @@
     <target name="fortest">
         <echo message="Our servers are::"/>
         
-        <for list="lb,web01,web02,mysql" param="servertype">
+        <for list="web01" param="servertype">
             <sequential>
                 <echo>Server @{servertype}</echo>
                 <echo>Color ${color}</echo>
