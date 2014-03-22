@@ -41,9 +41,10 @@ sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
 
-echo ===========================
-nova list | grep ACTIVE
-cat /etc/hosts
+#Debugging
+#echo ===========================
+#nova list | grep ACTIVE
+#cat /etc/hosts
 
 #for INSTANCE in `nova list | grep ACTIVE | awk '{print $2}'`;
 #do
