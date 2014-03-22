@@ -13,7 +13,8 @@ INSTANCENAME=${COLOR}-${SERVERTYPE}
 
 . ~/keystonerc_admin
 
-#For Dennis!
+
+echo For Dennis, checking for duplicate instances
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
 	echo Instance name $INSTANCENAME already exists, bombing out !
@@ -32,7 +33,7 @@ echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 sudo cp /etc/hosts /etc/hosts.tmp
 sudo grep STATIC /etc/hosts.tmp > /etc/hosts
 sudo rm /etc/hosts.tmp
-sudo "nova list | grep ACTIVE | awk '{print $9" "$4}' >> /etc/hosts"
+sudo "nova list | grep ACTIVE | awk '{print $9," ",$4}' >> /etc/hosts"
 sudo /etc/init.d/dnsmasq reload
 
 #for INSTANCE in `nova list | grep ACTIVE | awk '{print $2}'`;
