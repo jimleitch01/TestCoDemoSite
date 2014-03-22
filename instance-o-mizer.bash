@@ -34,6 +34,8 @@ echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 
 echo Refreshing DNS
 
+cat /etc/hosts
+
 sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 sudo mv -f /etc/hosts.tmp /etc/hosts
