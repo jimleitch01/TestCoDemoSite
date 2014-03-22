@@ -10,7 +10,7 @@
     </description>
     
     <property name="message" value="Hello World!"/>
-    <property name="color" value="melon"/>
+    <property name="servertypes" value="lb,mysql,web01,web02,jboss"/>
     
     <target name="welcome">
         <echo>
@@ -21,20 +21,15 @@
     <target name="fortest">
         <echo message="Our servers are::"/>
         
-        <for list="lb,mysql,web01,web02" param="servertype">
+        <for list="${servertypes}" param="servertype">
             <sequential>
                 <echo>Server @{servertype}</echo>
                 <echo>Color ${color}</echo>
-               
-
-        <exec executable="bash">
-            <arg value="./instance-o-mizer.bash"/>
-            <arg value="${color}"/>
-            <arg value="@{servertype}"/>
-        </exec>
-                    
-                
-                
+                <exec executable="bash">
+                    <arg value="./instance-o-mizer.bash"/>
+                    <arg value="${color}"/>
+                    <arg value="@{servertype}"/>
+                </exec>               
             </sequential>
         </for>
     </target>
