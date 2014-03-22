@@ -23,8 +23,17 @@ fi
 
 echo Starting Instance ${COLOR}-${SERVERTYPE}
 INSTANCEID=`nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
-echo sleeping 10 for floating IP address
-sleep 10
+
+
+
+while [[ `nova list | grep ACTIVE | grep $INSTANCEID` = "" ]];
+do
+	sleep 1
+done
+
+
+
+
 INSTANCEFLOATINGIP=`nova show $INSTANCEID | grep novanetwork | awk '{print $6}'`
 
 echo INSTANCEID=$INSTANCEID
@@ -33,9 +42,6 @@ echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 #DNS
 
 echo Refreshing DNS
-
-
-
 sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 sudo mv -f /etc/hosts.tmp /etc/hosts
