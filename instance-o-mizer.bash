@@ -40,17 +40,14 @@ INSTANCEFLOATINGIP=`nova show $INSTANCEID | grep novanetwork | awk '{print $6}'`
 echo INSTANCEID=$INSTANCEID
 echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 
-#DNS
+# Create Local DNS
 echo Refreshing DNS
 sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
 
-#Ansible Hosts File
-
-
-
+# Create ansible Hosts File
 HOST_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}'`
 COLOR_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}' | cut -d"-" -f1 | sort | uniq`
 SERVERTYPES_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}' | cut -d"-" -f2 | sort | uniq`
@@ -80,22 +77,12 @@ done
 
 sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
 
+# Run ansible playbooks
+
 sudo ansible-playbook -i /etc/ansible/hosts playbooks/homegrown/testco_init.yaml
-sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/lamp_simple/site.yml 
-sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/jboss-standalone/site.yml 
+###sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/lamp_simple/site.yml 
+###sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/jboss-standalone/site.yml 
 
-#Debugging
-#echo ===========================
-#nova list | grep ACTIVE
-#cat /etc/hosts
-
-#for INSTANCE in `nova list | grep ACTIVE | awk '{print $2}'`;
-#do
-#
-#	DNSNAME=`nova show $INSTANCE | grep name | awk '{print $4}'`
-#	DNSIP=`nova show $INSTANCE | grep novanetwork | awk '{print $6}'`
-#   #echo $DNSIP $DNSNAME >> /etc/hosts
-#done
 
 
 
