@@ -80,8 +80,9 @@ done
 
 sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
 
-#sudo ansible-playbook playbooks/homegrown/testco_init.yaml
-
+sudo ansible-playbook -i /etc/ansible/hosts playbooks/homegrown/testco_init.yaml
+sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/lamp_simple/site.yml 
+sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/jboss-standalone/site.yml 
 
 #Debugging
 #echo ===========================
