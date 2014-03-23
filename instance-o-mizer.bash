@@ -47,7 +47,10 @@ sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
 
-sudo ansible-playbook playbooks/homegrown/testco_init.yaml
+
+
+
+#sudo ansible-playbook playbooks/homegrown/testco_init.yaml
 
 
 #Debugging
