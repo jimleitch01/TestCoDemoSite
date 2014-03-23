@@ -32,8 +32,16 @@
                 </exec>               
             </sequential>
         </for>
+        
+        <exec executable="bash">
+            <arg value="./orchestrate-o-mizer.bash"/>
+        </exec>   
+        
     </target>
     
+   
+   
+   
     
     <target name="cloud-up">
         
