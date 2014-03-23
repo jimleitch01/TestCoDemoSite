@@ -1,0 +1,7 @@
+[webservers]
+web
+
+[dbservers]
+mysql
+
+
