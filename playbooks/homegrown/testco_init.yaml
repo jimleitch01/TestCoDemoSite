@@ -3,16 +3,16 @@
 
   tasks:
     - name: disable selinux 
-      template: src=playbooks/homegrown/templates/selinux dest=/etc/sysconfig/selinux
+      template: src=templates/selinux dest=/etc/sysconfig/selinux
 
     - name: Fix ssh daemon 
-      template: src=playbooks/homegrown/templates/sshd_config dest=/etc/ssh/sshd_config
+      template: src=templates/sshd_config dest=/etc/ssh/sshd_config
 
     - name: Copy bashrc 
-      template: src=playbooks/homegrown/templates/bashrc dest=/root/.bashrc
+      template: src=templates/bashrc dest=/root/.bashrc
 
     - name: Copy yum.conf 
-      template: src=playbooks/homegrown/templates/yum.conf dest=/etc/yum.conf
+      template: src=templates/yum.conf dest=/etc/yum.conf
 
     - name: ensure telnet installed 
       yum: pkg=telnet state=installed
