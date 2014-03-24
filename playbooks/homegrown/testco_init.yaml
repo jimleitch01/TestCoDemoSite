@@ -29,6 +29,6 @@
     - name: ensure wget installed 
       yum: pkg=wget state=installed
 
-    - name: reboot the servers
-      action: command /sbin/reboot  now
+#    - name: reboot the servers
+#      action: command /sbin/reboot  now
 
