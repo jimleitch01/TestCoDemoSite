@@ -10,7 +10,7 @@ IMAGE=01d0a643-b309-49b8-b1ff-7f20889f190e
 COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
-VALID_COLORS="red|orange|yellow|green|blue|indigo|violet"
+VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|ci|test|accept|prod"
 
 . ~/keystonerc_admin
 
