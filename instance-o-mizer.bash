@@ -84,7 +84,21 @@ do
    sudo sh -c "echo >> /etc/ansible/hosts.tmp"
 done
 
+for COLOR in $COLOR_LIST;
+do
+   sudo sh -c "echo; echo [$COLOR] >> /etc/ansible/hosts.tmp"
+   for HOST in $HOST_LIST;
+   do
+      sudo sh -c "echo $HOST | grep $COLOR  >> /etc/ansible/hosts.tmp"
+   done
+   sudo sh -c "echo >> /etc/ansible/hosts.tmp"
+done
+
 sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
+
+Rebooting all $COLOR servers
+ansible $COLOR -m command -a "/sbin/reboot -t now"
+
 
 
 
