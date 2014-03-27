@@ -5,8 +5,8 @@
 #
 #  Created by Jim Leitch on 3/17/14.
 #
-FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
-IMAGE=01d0a643-b309-49b8-b1ff-7f20889f190e
+###FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
+IMAGE=af5ff05d-5b31-40d0-b240-0c4b6742c633
 COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
@@ -14,9 +14,9 @@ VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|ci|test|accept|prod"
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
-	IMAGE=db2fc608-e6cf-4f59-a397-ba1c5043761d
+	FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
 else
-	IMAGE=01d0a643-b309-49b8-b1ff-7f20889f190e
+	FLAVOR=1d0a643-b309-49b8-b1ff-7f20889f190e
 fi
 
 
