@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!-- {{ ansible_managed }} -->
+<!-- Ansible managed: /var/lib/jenkins/jobs/petstore/workspace/playbooks/examples/jboss-standalone/roles/jboss-standalone/templates/standalone.xml modified on 2014-03-24 03:22:19 by jenkins on dennis-jenkins-test01 -->
 
 <server xmlns="urn:jboss:domain:1.2">
     <extensions>
@@ -292,11 +292,11 @@
     </interfaces>
     <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
         <socket-binding name="management-native" interface="management" port="${jboss.management.native.port:9999}"/>
-        <socket-binding name="management-http" interface="management" port="${jboss.management.http.port:9990}"/>
-        <socket-binding name="management-https" interface="management" port="${jboss.management.https.port:9443}"/>
+        <socket-binding name="management-http" interface="public" port="${jboss.management.http.port:9990}"/>
+        <socket-binding name="management-https" interface="management" port="${jboss.management.http.port:9443}"/>
         <socket-binding name="ajp" port="8009"/>
-        <socket-binding name="http" port="{{ http_port }}"/>
-        <socket-binding name="https" port="{{ https_port }}"/>
+        <socket-binding name="http" port="8080"/>
+        <socket-binding name="https" port="8443"/>
         <socket-binding name="osgi-http" interface="management" port="8090"/>
         <socket-binding name="remoting" port="4447"/>
         <socket-binding name="txn-recovery-environment" port="4712"/>
