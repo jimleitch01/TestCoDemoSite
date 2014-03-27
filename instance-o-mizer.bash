@@ -55,6 +55,7 @@ sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
+sudo scp /etc/hosts root@10.10.10.10:/etc/hosts
 
 # Create ansible Hosts File
 HOST_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}'`

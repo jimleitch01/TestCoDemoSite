@@ -4,9 +4,7 @@
     
     <property name="src" value="src"/>
     
-    <tstamp>
-    <format property="TODAY_GB" pattern="d-MMMM-yyyy" locale="en,GB"/>
-  </tstamp>
+
 
     
     <description>
@@ -14,7 +12,7 @@
     </description>
     
     <property name="message" value="Hello World!"/>
-    <property name="servertypes" value="jboss,lb,mysql,web-01,web-02"/>
+<!--    <property name="servertypes" value="jboss,lb,mysql,web-01,web-02"/>  -->
     <property name="servertypes" value="jboss"/>
 
     
@@ -29,9 +27,7 @@
         
         <for list="${servertypes}" param="servertype">
             <sequential>
-                <tstamp>
-                    <format property="TODAY_GB" pattern="d-MMMM-yyyy" locale="en,GB"/>
-                </tstamp>
+
 
                 <echo>Server @{servertype}</echo>
                 <echo>Color ${color}</echo>
@@ -46,10 +42,7 @@
         <exec executable="bash">
             <arg value="./orchestrate-o-mizer.bash"/>
         </exec>   
-        <tstamp>
-            <format property="TODAY_GB" pattern="d-MMMM-yyyy" locale="en,GB"/>
-        </tstamp>
-
+       
         
     </target>
     
