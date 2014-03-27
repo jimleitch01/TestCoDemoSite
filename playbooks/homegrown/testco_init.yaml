@@ -3,7 +3,7 @@
 
   tasks:
     - name: disable selinux 
-      template: src=templates/selinux dest=/etc/sysconfig/selinux
+      template: src=templates/selinux dest=/etc/selinux/config
 
     - name: Fix ssh daemon 
       template: src=templates/sshd_config dest=/etc/ssh/sshd_config
