@@ -41,22 +41,21 @@ do
 	sleep 1
 done
 
-
-
-
 INSTANCEFLOATINGIP=`nova show $INSTANCEID | grep novanetwork | awk '{print $6}'`
 
 echo INSTANCEID=$INSTANCEID
 echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 
 # Create Local DNS
-echo Refreshing DNS
+echo Refreshing DNS and HOSTS
 sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
 sudo scp /etc/hosts root@10.10.10.10:/etc/hosts
 
+# Create Local DNS
+echo Refreshing Ansible hosts
 # Create ansible Hosts File
 HOST_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}'`
 COLOR_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}' | cut -d"-" -f1 | sort | uniq`
