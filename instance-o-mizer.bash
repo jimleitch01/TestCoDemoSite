@@ -16,7 +16,7 @@ if [[ ${SERVERTYPE} != "jboss" ]];
 then
 	FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
 else
-	FLAVOR=1d0a643-b309-49b8-b1ff-7f20889f190e
+	FLAVOR=01d0a643-b309-49b8-b1ff-7f20889f190e
 fi
 
 
