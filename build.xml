@@ -4,6 +4,10 @@
     
     <property name="src" value="src"/>
     
+    <tstamp>
+    <format property="TODAY_GB" pattern="d-MMMM-yyyy" locale="en,GB"/>
+  </tstamp>
+
     
     <description>
         Jim Some Nice Text Here
@@ -23,6 +27,10 @@
         
         <for list="${servertypes}" param="servertype">
             <sequential>
+                <tstamp>
+                    <format property="TODAY_GB" pattern="d-MMMM-yyyy" locale="en,GB"/>
+                </tstamp>
+
                 <echo>Server @{servertype}</echo>
                 <echo>Color ${color}</echo>
                 <exec executable="bash">
@@ -36,21 +44,15 @@
         <exec executable="bash">
             <arg value="./orchestrate-o-mizer.bash"/>
         </exec>   
+        <tstamp>
+            <format property="TODAY_GB" pattern="d-MMMM-yyyy" locale="en,GB"/>
+        </tstamp>
+
         
     </target>
     
    
    
-   
-    
-    <target name="cloud-up">
-        
-        <echo message="Starting Instances"/>
-        
-        <exec executable="nova-wrapper.bash">
-            <arg line="boot --key-name master  --flavor db2fc608-e6cf-4f59-a397-ba1c5043761d --image af5ff05d-5b31-40d0-b240-0c4b6742c633 ${color}-${servertype}"/>
-        </exec>
-        
-    </target>
+
     
 </project>
