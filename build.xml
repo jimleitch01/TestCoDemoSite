@@ -41,13 +41,7 @@
         
         <exec executable="bash">
             <arg value="./orchestrate-o-mizer.bash"/>
-        </exec>   
-       
-        
+        </exec>       
     </target>
-    
-   
-   
-
-    
+        
 </project>

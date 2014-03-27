@@ -5,6 +5,7 @@
 # Run ansible playbooks
 echo sleeping 60 for startup
 sleep 60
+echo slept
 sudo ansible-playbook -i /etc/ansible/hosts playbooks/homegrown/testco_init.yaml
 echo [NOT] sleeping 120 for reboots
 ###sleep 120
