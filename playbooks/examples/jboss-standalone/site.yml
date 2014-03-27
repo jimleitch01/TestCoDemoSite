@@ -7,8 +7,3 @@
   roles:
     - jboss-standalone
 
-    - name: Copy jboss files 
-      template: src=templates/mgmt-users.properties dest=/etc/yum.conf
-      template: src=templates/standalone.xml dest=/usr/share/jboss-as/standalone/configuration/standalone.xml
-      template: src=templates/mgmt-users.properties dest=/usr/share/jboss-as/domain/configuration/mgmt-users.properties
-      template: src=templates/mgmt-users.properties dest=/usr/share/jboss-as/standalone/configuration/mgmt-users.properties

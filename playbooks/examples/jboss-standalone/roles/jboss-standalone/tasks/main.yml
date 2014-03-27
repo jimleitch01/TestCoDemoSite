@@ -15,6 +15,12 @@
 - name: Rename install directory
   command: chdir=/usr/share /bin/mv jboss-as-7.1.1.Final jboss-as creates=/usr/share/jboss-as
 
+- name: Copy the petstore war
+  copy: src=petstoreWeb.war dest=/usr/share/jboss-as/standalone/deployments mode=0755
+
+- name: Copying standalone.xml configuration file
+  template: src=mgmt-users.properties dest=/usr/share/jboss-as/standalone/configuration/
+
 - name: Copying standalone.xml configuration file
   template: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/
   notify: restart jboss
