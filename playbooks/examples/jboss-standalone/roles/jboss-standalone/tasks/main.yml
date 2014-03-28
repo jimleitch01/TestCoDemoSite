@@ -31,13 +31,13 @@
   service: name=jboss enabled=yes state=started 
 
 - name: Copy the petstore war
-  copy: src=petstoreWeb.war dest=/usr/share/jboss-as/standalone/deployments mode=0755
+  copy: src=files/petstoreWeb.war dest=/usr/share/jboss-as/standalone/deployments mode=0755
 
 - name: Copying user.properties configuration file
-  copy: src=mgmt-users.properties dest=/usr/share/jboss-as/standalone/configuration/
+  copy: src=templates/mgmt-users.properties dest=/usr/share/jboss-as/standalone/configuration/
 
 - name: Copying standalone.xml configuration file
-  copy: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/
+  copy: src=templates/standalone.xml dest=/usr/share/jboss-as/standalone/configuration/
   notify: restart jboss
 
 
