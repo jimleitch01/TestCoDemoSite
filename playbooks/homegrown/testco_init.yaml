@@ -33,7 +33,12 @@
       yum: pkg=wget state=installed
 
     - name: disable selinux
-      command: /sbin/setenforce 0
+      command: /usr/sbin/setenforce 0
+
+    - name: disable run updatedb
+      command: /usr/bin/updatedb
+      
+      
 
 
 
