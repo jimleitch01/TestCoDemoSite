@@ -33,7 +33,7 @@
       yum: pkg=wget state=installed
 
     - name: disable selinux
-      action: command echo 0 > /selinux/enforce
+      command: /sbin/setenforce 0
 
 
 
