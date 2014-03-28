@@ -96,8 +96,8 @@ done
 
 sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
 
-echo Rebooting all $COLOR servers
-ansible $COLOR -m command -a "/sbin/reboot -t now"
+##echo Rebooting all $COLOR servers
+##ansible $COLOR -m command -a "/sbin/reboot -t now"
 
 
 
