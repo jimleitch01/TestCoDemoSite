@@ -13,6 +13,9 @@
 
     - name: Copy yum.conf 
       template: src=templates/yum.conf dest=/etc/yum.conf
+      
+    - name: add line to crontab for updatedb
+      cron: name="run updatedb" minute="15" job="updatedb"
 
     - name: ensure telnet installed 
       yum: pkg=telnet state=installed
@@ -28,7 +31,11 @@
 
     - name: ensure wget installed 
       yum: pkg=wget state=installed
+      
+      echo 0 > /selinux/enforce
 
-#    - name: reboot the servers
-#      action: command /sbin/reboot  now
+    - name: disable selinux
+      action: command "echo 0 > /selinux/enforce"
+
+
 
