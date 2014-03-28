@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!-- Ansible managed: /var/lib/jenkins/jobs/petstore/workspace/playbooks/examples/jboss-standalone/roles/jboss-standalone/templates/standalone.xml modified on 2014-03-24 03:22:19 by jenkins on dennis-jenkins-test01 -->
-
 <server xmlns="urn:jboss:domain:1.2">
+
     <extensions>
         <extension module="org.jboss.as.clustering.infinispan"/>
         <extension module="org.jboss.as.configadmin"/>
@@ -28,6 +27,7 @@
         <extension module="org.jboss.as.webservices"/>
         <extension module="org.jboss.as.weld"/>
     </extensions>
+
     <management>
         <security-realms>
             <security-realm name="ManagementRealm">
@@ -50,6 +50,7 @@
             </http-interface>
         </management-interfaces>
     </management>
+
     <profile>
         <subsystem xmlns="urn:jboss:domain:logging:1.1">
             <console-handler name="CONSOLE">
@@ -198,14 +199,13 @@
         <subsystem xmlns="urn:jboss:domain:naming:1.1"/>
         <subsystem xmlns="urn:jboss:domain:osgi:1.2" activation="lazy">
             <properties>
-                <!-- Specifies the beginning start level of the framework -->
-                <property name="org.osgi.framework.startlevel.beginning">1</property>
+                <property name="org.osgi.framework.startlevel.beginning">
+                    1
+                </property>
             </properties>
             <capabilities>
-                <!-- modules registered with the OSGi layer on startup -->
                 <capability name="javax.servlet.api:v25"/>
                 <capability name="javax.transaction.api"/>
-                <!-- bundles started in startlevel 1 -->
                 <capability name="org.apache.felix.log" startlevel="1"/>
                 <capability name="org.jboss.osgi.logging" startlevel="1"/>
                 <capability name="org.apache.felix.configadmin" startlevel="1"/>
@@ -274,29 +274,33 @@
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:weld:1.0"/>
     </profile>
-    <interfaces>  
-        <interface name="management">  
-            <inet-address value="127.0.0.1"/>  
-        </interface>  
-        <interface name="public">  
-           <inet-address value="127.0.0.1"/>  
-        </interface>  
-  
-       <!-- Equivalent of -b 0.0.0.0 -->  
-  
-          <interface name="any">  
-               <any-address/>  
-          </interface>  
+
+    <interfaces>
+        <interface name="management">
+            <inet-address value="${jboss.bind.address.management:0.0.0.0}"/>
+        </interface>
+        <interface name="public">
+            <inet-address value="${jboss.bind.address:0.0.0.0}"/>
+        </interface>
+        <interface name="unsecure">
+            <inet-address value="${jboss.bind.address.unsecure:127.0.0.1}"/>
+        </interface>
     </interfaces>
-    <socket-binding name="management-http" interface="public" port="${jboss.management.http.port:9990}"/>
-<socket-binding name="http" port="8080"/>  
-        <socket-binding name="https" port="8443"/>  
-        <socket-binding name="jmx-connector-registry" port="1090"/>  
-        <socket-binding name="jmx-connector-server" port="1091"/>  
-        <socket-binding name="jndi" port="1099"/>  
-        <socket-binding name="osgi-http" port="8090"/>  
-        <socket-binding name="remoting" port="4447"/>  
-        <socket-binding name="txn-recovery-environment" port="4712"/>  
-        <socket-binding name="txn-status-manager" port="4713"/>  
-    </socket-binding-group>  
+
+    <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
+        <socket-binding name="management-native" interface="management" port="${jboss.management.native.port:9999}"/>
+        <socket-binding name="management-http" interface="management" port="${jboss.management.http.port:9990}"/>
+        <socket-binding name="management-https" interface="management" port="${jboss.management.https.port:9443}"/>
+        <socket-binding name="ajp" port="8009"/>
+        <socket-binding name="http" port="8080"/>
+        <socket-binding name="https" port="8443"/>
+        <socket-binding name="osgi-http" interface="management" port="8090"/>
+        <socket-binding name="remoting" port="4447"/>
+        <socket-binding name="txn-recovery-environment" port="4712"/>
+        <socket-binding name="txn-status-manager" port="4713"/>
+        <outbound-socket-binding name="mail-smtp">
+            <remote-destination host="localhost" port="25"/>
+        </outbound-socket-binding>
+    </socket-binding-group>
+
 </server>

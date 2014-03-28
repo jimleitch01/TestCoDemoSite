@@ -36,8 +36,8 @@
 - name: Copying user.properties configuration file
   template: src=mgmt-users.properties dest=/usr/share/jboss-as/standalone/configuration/
 
-#- name: Copying standalone.xml configuration file
-#  template: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/
+- name: Copying standalone.xml configuration file
+  template: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/
   notify: restart jboss
 
 
