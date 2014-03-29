@@ -10,7 +10,7 @@ IMAGE=af5ff05d-5b31-40d0-b240-0c4b6742c633
 COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
-VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|accept|production"
+VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|production"
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
