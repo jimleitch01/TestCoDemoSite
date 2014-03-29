@@ -112,7 +112,9 @@ for HOST in $HOST_LIST;
    do
    	  echo $DINK
    	  DINK=$DINK"."
-      if [[ `/usr/bin/nc -w 1 -z $HOST 22` -eq 0 ]];
+   	  sleep 2
+   	  /usr/bin/nc -w 1 -z $HOST 22
+      if [[ $? = "0" ]];
       then 
       	ALLHOSTSLIVE=1
       else
