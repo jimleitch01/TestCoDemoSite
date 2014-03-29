@@ -19,22 +19,17 @@ else
 	FLAVOR=01d0a643-b309-49b8-b1ff-7f20889f190e
 fi
 
-
-
 . ~/keystonerc_admin
 
-
-echo For Dennis, checking for duplicate instances
+echo +++For Dennis, checking for duplicate instances
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
-	echo Instance name $INSTANCENAME already exists, bombing out !
+	echo +++Instance name $INSTANCENAME already exists, bombing out !
 	exit 1
 fi
 
-echo Starting Instance ${COLOR}-${SERVERTYPE}
+echo +++Starting Instance ${COLOR}-${SERVERTYPE}
 INSTANCEID=`nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
-
-
 
 while [[ `nova list | grep ACTIVE | grep $INSTANCEID` = "" ]];
 do
@@ -43,22 +38,22 @@ done
 
 INSTANCEFLOATINGIP=`nova show $INSTANCEID | grep novanetwork | awk '{print $6}'`
 
-echo INSTANCEID=$INSTANCEID
-echo INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
+echo +++INSTANCEID=$INSTANCEID
+echo +++INSTANCEFLOATINGIP=$INSTANCEFLOATINGIP
 
 # Create Local DNS
-echo Refreshing DNS and HOSTS
+echo +++Refreshing DNS and HOSTS
 sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
-echo Updating hosts on master
+echo +++Updating hosts on master
 sudo scp /etc/hosts root@10.10.10.10:/etc/hosts
-echo restarting nginx reverse proxy
+echo +++Restarting nginx reverse proxy
 sudo ssh root@10.10.10.10 service nginx restart
 
 # Refresh ansible hosts
-echo Refreshing Ansible hosts
+echo +++Refreshing Ansible hosts
 # Create ansible Hosts File
 HOST_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}'`
 COLOR_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}' | cut -d"-" -f1 | sort | uniq`
@@ -99,10 +94,7 @@ done
 
 sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
 
-
-
-echo Wait until all servers operational
-sleep 30
+echo +++Wait until all instances operational
 ALLHOSTSLIVE=0
 DINK="."
 while [[ $ALLHOSTSLIVE -eq 0 ]];
@@ -123,5 +115,6 @@ for HOST in $HOST_LIST;
       fi
    done
 done
+echo +++All instances operational
 
 
