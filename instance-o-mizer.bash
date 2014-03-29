@@ -21,7 +21,7 @@ fi
 
 . ~/keystonerc_admin
 
-echo +++For Dennis, checking for duplicate instances
+echo +++Checking for duplicate instances
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
 	echo +++Instance name $INSTANCENAME already exists, bombing out !
