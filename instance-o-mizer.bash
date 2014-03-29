@@ -102,6 +102,7 @@ sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
 
 
 echo Wait until all servers operational
+sleep 30
 ALLHOSTSLIVE=0
 while [[ $ALLHOSTSLIVE -eq 0 ]];
 do
