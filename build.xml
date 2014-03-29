@@ -9,7 +9,7 @@
     </description>
     
     <property name="message" value="Hello World!"/>
-    <property name="servertypes" value="jboss,lb,mysql,web-01,web-02,soap"/>
+    <property name="servertypes" value="jboss,lb,mysql,web-01,web-02"/>
 <!--    <property name="servertypes" value="jboss"/> -->
 
     
@@ -20,14 +20,13 @@
     </target>
     
     <target name="fortest">
-        <echo message="Our servers are::"/>
         
         <for list="${servertypes}" param="servertype">
             <sequential>
 
 
-                <echo>Server @{servertype}</echo>
-                <echo>Color ${color}</echo>
+                <echo>+++Server @{servertype}</echo>
+                <echo>+++Color ${color}</echo>
                 <exec executable="bash">
                     <arg value="./instance-o-mizer.bash"/>
                     <arg value="${color}"/>
