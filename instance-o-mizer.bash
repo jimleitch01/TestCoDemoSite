@@ -52,9 +52,12 @@ sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
+echo Updating hosts on master
 sudo scp /etc/hosts root@10.10.10.10:/etc/hosts
+echo restarting nginx reverse proxy
+sudo ssh root@10.10.10.10 service nginx restart
 
-# Create Local DNS
+# Refresh ansible hosts
 echo Refreshing Ansible hosts
 # Create ansible Hosts File
 HOST_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}'`
@@ -96,15 +99,23 @@ done
 
 sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
 
-echo Rebooting all $COLOR servers
-ansible $COLOR -m command -a "/sbin/reboot -t now"
 
 
-
-
-
-
-
-
+echo Wait until all servers operational
+ALLHOSTSLIVE=0
+while [[ $ALLHOSTSLIVE -eq 0 ]];
+do
+ALLHOSTSLIVE=0
+for HOST in $HOST_LIST;
+   do
+      if [[ `nc -w 1 -z $HOST 22` -eq 0 ]];
+      then 
+      	ALLHOSTSLIVE=1
+      else
+      	ALLHOSTSLIVE=0
+      	break
+      fi
+   done
+done
 
 
