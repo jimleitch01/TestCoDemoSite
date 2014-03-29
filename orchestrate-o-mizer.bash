@@ -33,7 +33,7 @@ sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/lamp_simple/site.
 sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/jboss-standalone/site.yml 
 
 echo +++Rebooting all $COLOR servers
-sudo ansible $COLOR -m command -a "/sbin/reboot -t now"
+sudo ansible $COLOR -m command -a "/sbin/reboot"
 
 
 
