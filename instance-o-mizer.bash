@@ -34,9 +34,19 @@ echo +++Starting Instance ${COLOR}-${SERVERTYPE}
 echo +++"nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
 INSTANCEID=`nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
 
+TIMEOUTCOUNTER=120
 while [[ `nova list | grep ACTIVE | grep $INSTANCEID` = "" ]];
 do
 	sleep 1
+	TIMEOUTCOUNTER=$TIMEOUTCOUNTER-1
+	
+	if [[ $TIMEOUTCOUNTER -ge 120 ]];
+	then
+		echo +++Instance startup timeout reached, bombing out
+		exit 1
+	fi
+	
+	
 done
 
 INSTANCEFLOATINGIP=`nova show $INSTANCEID | grep novanetwork | awk '{print $6}'`
