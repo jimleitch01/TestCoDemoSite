@@ -26,6 +26,7 @@ if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
 	echo +++Instance name $INSTANCENAME already exists, kill it !
 	nova delete $INSTANCENAME
+	sleep 10
 	echo +++It is an ex $INSTANCENAME it has ceased to be
 fi
 
