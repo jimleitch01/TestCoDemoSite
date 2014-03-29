@@ -108,7 +108,7 @@ do
 ALLHOSTSLIVE=0
 for HOST in $HOST_LIST;
    do
-      if [[ `nc -w 1 -z $HOST 22` -eq 0 ]];
+      if [[ `/usr/bin/nc -w 1 -z $HOST 22` -eq 0 ]];
       then 
       	ALLHOSTSLIVE=1
       else
