@@ -9,8 +9,8 @@
     </description>
     
     <property name="message" value="Hello World!"/>
-<!--    <property name="servertypes" value="jboss,lb,mysql,web-01,web-02,soap"/>
--->    <property name="servertypes" value="jboss"/> 
+    <property name="servertypes" value="jboss,lb,mysql,web-01,web-02,soap"/>
+<!--    <property name="servertypes" value="jboss"/> -->
 
     
     <target name="welcome">
