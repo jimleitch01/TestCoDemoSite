@@ -104,11 +104,14 @@ sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
 echo Wait until all servers operational
 sleep 30
 ALLHOSTSLIVE=0
+DINK="."
 while [[ $ALLHOSTSLIVE -eq 0 ]];
 do
 ALLHOSTSLIVE=0
 for HOST in $HOST_LIST;
    do
+   	  echo $DINK
+   	  DINK=$DINK"."
       if [[ `/usr/bin/nc -w 1 -z $HOST 22` -eq 0 ]];
       then 
       	ALLHOSTSLIVE=1
