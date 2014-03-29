@@ -38,7 +38,7 @@
     - name: disable selinux
       command: /usr/sbin/setenforce 0
 
-    - name: disable run updatedb
+    - name: run updatedb
       command: /usr/bin/updatedb
       
       

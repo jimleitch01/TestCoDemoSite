@@ -37,7 +37,7 @@
   copy: src=mgmt-users.properties dest=/usr/share/jboss-as/standalone/configuration/
 
 - name: Copying standalone.xml configuration file
-  copy: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/
+  copy: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/jim.xml
   notify: restart jboss
 
 

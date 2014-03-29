@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>order_doggie</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">order_doggie</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/petstoreWeb/shop/Controller.jpf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Dogs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=K9-CW-01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Add to Cart')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name={actionForm.cart.lineItems[0].quantity}</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#Netui_Form_0 &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Checkout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=b &gt; span</td>
+	<td>$465.87</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[2]/span</td>
+	<td>K9-CW-01</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[3]/span</td>
+	<td>Adult Female</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=wlw-radio_button_group_key:{actionForm.order.billingAddress}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=wlw-radio_button_group_key:{actionForm.order.shippingAddress}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name={actionForm.order.creditCard}</td>
+	<td>1212121212121212</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name={actionForm.order.exprDate}</td>
+	<td>08/16</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='orderTable']/tbody/tr[7]/td[2]/span</td>
+	<td>901 San Antonio Road</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='orderTable']/tbody/tr[7]/td[3]/span</td>
+	<td>901 San Antonio Road</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='orderTable']/tbody/tr[14]/td/table/tbody/tr[2]/td[3]</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//table[@id='orderTable']/tbody/tr[14]/td/table/tbody/tr[3]/td/b/span</td>
+	<td>$465.87</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=b</td>
+	<td>Thank you, your order has been submitted.</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>css=table.tableborder.1.1</td>
+	<td>Adult Female</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign Out</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
