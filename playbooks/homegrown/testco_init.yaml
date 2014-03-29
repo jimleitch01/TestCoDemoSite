@@ -10,7 +10,10 @@
 
     - name: Copy bashrc 
       template: src=templates/bashrc dest=/root/.bashrc
-
+      
+    - name: Copy /etc/hosts 
+      copy: src=/etc/hosts dest=/etc/hosts
+      
     - name: Copy yum.conf 
       template: src=templates/yum.conf dest=/etc/yum.conf
       
