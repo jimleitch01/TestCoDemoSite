@@ -24,8 +24,9 @@ fi
 echo +++Checking for duplicate instances
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
-	echo +++Instance name $INSTANCENAME already exists, bombing out !
-	exit 1
+	echo +++Instance name $INSTANCENAME already exists, kill it !
+	nova delete $INSTANCENAME
+	echo +++ It is an ex $INSTANCENAME it has ceased to be
 fi
 
 echo +++Starting Instance ${COLOR}-${SERVERTYPE}
