@@ -38,6 +38,7 @@
         
         <exec executable="bash">
             <arg value="./orchestrate-o-mizer.bash"/>
+            <arg value="${color}"/>
         </exec>       
     </target>
         
