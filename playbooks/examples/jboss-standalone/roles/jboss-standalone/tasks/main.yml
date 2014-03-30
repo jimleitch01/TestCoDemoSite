@@ -38,8 +38,11 @@
 - name: Copying user.properties configuration file
   copy: src=mgmt-users.properties dest=/usr/share/jboss-as/standalone/configuration/
 
-- name: Copying standalone.xml configuration file
+- name: JIM Copying standalone.xml configuration file
   copy: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/jim.xml
+
+- name: Copying standalone.xml configuration file
+  copy: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/standalone.xml
   notify: restart jboss
 
 
