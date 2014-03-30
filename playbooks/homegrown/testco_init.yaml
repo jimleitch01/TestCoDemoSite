@@ -35,8 +35,8 @@
     - name: ensure wget installed 
       yum: pkg=wget state=installed
 
-    - name: disable selinux
-      command: /usr/sbin/setenforce 0
+#    - name: disable selinux
+#      command: /usr/sbin/setenforce 0
 
     - name: run updatedb
       command: /usr/bin/updatedb
