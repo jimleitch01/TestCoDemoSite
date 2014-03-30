@@ -6,7 +6,9 @@
    - java-1.7.0-openjdk
 
 - name: Download JBoss from jboss.org
-  get_url: url=http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip dest=/opt/jboss-as-7.1.1.Final.zip
+  #get_url: url=http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip dest=/opt/jboss-as-7.1.1.Final.zip
+  get_url: url=http://10.10.10.10/jboss-as-7.1.1.Final.zip dest=/opt/jboss-as-7.1.1.Final.zip
+
 
 - name: Extract archive
   command: chdir=/usr/share /usr/bin/unzip -q /opt/jboss-as-7.1.1.Final.zip creates=/usr/share/jboss-as
