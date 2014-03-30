@@ -51,7 +51,7 @@
   command: cp /usr/share/jboss-as/standalone/configuration/jim.xml /usr/share/jboss-as/standalone/configuration/standalone.xml.jim
 
 - name: Copying standalone.xml configuration file
-  command: touch /tmp/jimwashere
+  command: echo GRRRRR >> /usr/share/jboss-as/standalone/configuration/standalone.xml
   notify: restart jboss
 
 
