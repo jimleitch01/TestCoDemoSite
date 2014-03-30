@@ -1,0 +1,45 @@
+Host *
+  ServerAliveInterval 20
+
+Host tunnelz 
+Port 8022 
+HostName ws6.test-rig.com
+#OpenStack
+LocalForward 8080 127.0.0.1:80
+#Jenkins
+LocalForward 12080 10.3.4.24:8080
+# ci
+LocalForward 12001 ci-jboss:8080
+LocalForward 12002 ci-jboss:9990
+LocalForward 12003 ci-jboss:22
+# testing 
+LocalForward 12011 testing-jboss:8080
+LocalForward 12012 testing-jboss:9990
+LocalForward 12013 testing-jboss:22
+# acceptance 
+LocalForward 12021 acceptance-jboss:8080
+LocalForward 12022 acceptance-jboss:9990
+LocalForward 12023 acceptance-jboss:22
+# production 
+LocalForward 12031 production-jboss:8080
+LocalForward 12032 production-jboss:9990
+LocalForward 12033 production-jboss:22
+# red 
+LocalForward 12041 red-jboss:8080
+LocalForward 12042 red-jboss:9990
+LocalForward 12043 red-jboss:22
+# orange 
+LocalForward 12051 yellow-jboss:8080
+LocalForward 12052 yellow-jboss:9990
+LocalForward 12053 yellow-jboss:22
+# yellow 
+LocalForward 12061 orange-jboss:8080
+LocalForward 12062 orange-jboss:9990
+LocalForward 12063 orange-jboss:22
+User root
+
+Host prodz
+Port 12033
+User root
+HostName 127.0.0.1
+

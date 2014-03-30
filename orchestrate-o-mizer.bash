@@ -28,9 +28,9 @@ sleep 30
 # echo +++All instances operational
 
 
-sudo ansible-playbook -i /etc/ansible/hosts playbooks/homegrown/testco_init.yaml
-sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/lamp_simple/site.yml 
-sudo ansible-playbook -i /etc/ansible/hosts playbooks/examples/jboss-standalone/site.yml 
+sudo ansible-playbook --limit=$COLOR -i /etc/ansible/hosts playbooks/homegrown/testco_init.yaml
+sudo ansible-playbook --limit=$COLOR -i /etc/ansible/hosts playbooks/examples/lamp_simple/site.yml 
+sudo ansible-playbook --limit=$COLOR -i /etc/ansible/hosts playbooks/examples/jboss-standalone/site.yml 
 
 echo +++Rebooting all $COLOR servers
 sudo ansible $COLOR -m command -a "/sbin/reboot"
