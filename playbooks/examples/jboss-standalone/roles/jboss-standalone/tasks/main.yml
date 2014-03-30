@@ -43,6 +43,10 @@
 
 - name: Copying standalone.xml configuration file
   copy: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/standalone.xml
+
+
+- name: Copying standalone.xml configuration file
+  copy: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/standalone.xml
   notify: restart jboss
 
 
