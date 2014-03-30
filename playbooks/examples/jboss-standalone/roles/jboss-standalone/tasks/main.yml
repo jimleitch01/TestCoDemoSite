@@ -50,9 +50,8 @@
 - name: The hack2
   command: cp /usr/share/jboss-as/standalone/configuration/jim.xml /usr/share/jboss-as/standalone/configuration/standalone.xml.jim
 
-
 - name: Copying standalone.xml configuration file
-  copy: src=standalone.xml dest=/usr/share/jboss-as/standalone/configuration/standalone.xml
+  command: touch /tmp/jimwashere
   notify: restart jboss
 
 
