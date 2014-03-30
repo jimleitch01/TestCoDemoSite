@@ -52,7 +52,8 @@ if [ -z "$SHUTDOWN_WAIT" ]; then
 fi
 
 if [ -z "$JBOSS_CONFIG" ]; then
-  JBOSS_CONFIG=standalone.xml
+  JBOSS_CONFIG=jim.xml
+#  JBOSS_CONFIG=standalone.xml
 fi
 
 JBOSS_SCRIPT=$JBOSS_HOME/bin/standalone.sh
