@@ -1,9 +1,3 @@
-use strict;
-use warnings;
-use Time::HiRes qw(sleep);
-use Test::WWW::Selenium;
-use Test::More "no_plan";
-
 my $sel = Test::WWW::Selenium->new( host => 'ondemand.saucelabs.com', 
 	port => 80, 
 	browser => '{"username": "jimleitch",'.
@@ -19,10 +13,10 @@ $sel->open_ok("/petstoreWeb/");
 sleep(15);
 $sel->click_ok("link=Stop Derby DB (stops the DB to allow redeploy)");
 $sel->wait_for_page_to_load_ok("30000");
-my $DB Stopped = $sel->get_body_text();
+my $DBStopped = $sel->get_body_text();
 $sel->click_ok("id=initDB");
 $sel->wait_for_page_to_load_ok("30000");
-my $DB Initialized = $sel->get_body_text();
+my $DBInitialized = $sel->get_body_text();
 $sel->click_ok("id=enter");
 $sel->wait_for_page_to_load_ok("30000");
 
@@ -69,4 +63,3 @@ $sel->text_is("css=b", "Thank you, your order has been submitted.");
 $sel->table_is("css=table.tableborder.1.1", "Adult Female");
 $sel->click_ok("link=Sign Out");
 $sel->wait_for_page_to_load_ok("30000");
-
