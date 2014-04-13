@@ -19,7 +19,7 @@
         </echo>
     </target>
     
-    <target name="fortest">
+    <target name="InstanceStart">
         
         <for list="${servertypes}" param="servertype">
             <sequential>
