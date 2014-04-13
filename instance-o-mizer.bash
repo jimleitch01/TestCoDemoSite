@@ -33,8 +33,9 @@ fi
 
 echo +++Starting Instance ${COLOR}-${SERVERTYPE}
 echo +++"nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
+echo 1
 INSTANCEID=`nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
-
+echo 2
 TIMEOUTCOUNTER=120
 while [[ `nova list | grep ACTIVE | grep $INSTANCEID` = "" ]];
 do
