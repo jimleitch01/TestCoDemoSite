@@ -6,8 +6,8 @@
 #  Created by Jim Leitch on 3/17/14.
 #
 ###FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
-###IMAGE=af5ff05d-5b31-40d0-b240-0c4b6742c633
-IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
+IMAGE=af5ff05d-5b31-40d0-b240-0c4b6742c633
+###IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
 COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
@@ -33,9 +33,10 @@ fi
 
 echo +++Starting Instance ${COLOR}-${SERVERTYPE}
 echo +++"nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
-echo 1
+
+
 INSTANCEID=`nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
-echo 2
+
 TIMEOUTCOUNTER=120
 while [[ `nova list | grep ACTIVE | grep $INSTANCEID` = "" ]];
 do
