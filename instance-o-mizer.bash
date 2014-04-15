@@ -63,10 +63,11 @@ sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
+
 echo +++Updating hosts on master
 sudo scp /etc/hosts root@10.10.10.10:/etc/hosts
 echo +++Restarting nginx reverse proxy
-sudo ssh root@10.10.10.10 service nginx restart
+sudo /etc/init.d/nginx restart
 
 # Refresh ansible hosts
 echo +++Refreshing Ansible hosts
