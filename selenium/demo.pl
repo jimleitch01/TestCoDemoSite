@@ -16,7 +16,7 @@ my $sel = Test::WWW::Selenium->new( host => 'localhost',
 
 $sel->open_ok("/petstoreWeb");
 
-sleep(15);
+sleep(30);
 $sel->click_ok("link=Stop Derby DB (stops the DB to allow redeploy)");
 $sel->wait_for_page_to_load_ok("30000");
 my $DBStopped = $sel->get_body_text();
