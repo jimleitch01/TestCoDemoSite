@@ -1,3 +1,8 @@
+#! /usr/bin/perl
+use strict;
+use warnings;
+use Selenium::Remote::Driver;
+
 my $sel = Test::WWW::Selenium->new( host => 'ondemand.saucelabs.com', 
 	port => 80, 
 	browser => '{"username": "jimleitch",'.
