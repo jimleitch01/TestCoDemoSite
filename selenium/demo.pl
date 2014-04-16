@@ -11,7 +11,7 @@ my $sel = Test::WWW::Selenium->new( host => 'localhost',
                                                '"os": "Windows 2003",'.
                                                '"browser": "firefox",'.
                                                '"browser-version": "7",'.
-                                               '"name": "This is an example test"}',
+                                               '"name": "Petstore test"}',
                                     browser_url => 'http://ci-jboss:8080/' );
 
 $sel->open_ok("/petstoreWeb");
