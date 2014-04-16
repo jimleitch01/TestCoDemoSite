@@ -4,8 +4,8 @@ use Time::HiRes qw(sleep);
 use Test::WWW::Selenium;
 use Test::More "no_plan";
 
-my $sel = Test::WWW::Selenium->new( host => 'ondemand.saucelabs.com', 
-                                    port => 7080, 
+my $sel = Test::WWW::Selenium->new( host => 'localhost', 
+                                    port => 4445, 
                                     browser => '{"username": "jimleitch",'.
                                                '"access-key": "3eb84966-ba07-4e0d-98a5-ed1d2f3e2ef8",'.
                                                '"os": "Windows 2003",'.
