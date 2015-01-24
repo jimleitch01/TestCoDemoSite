@@ -6,7 +6,7 @@
 #  Created by Jim Leitch on 3/17/14.
 #
 ###FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
-IMAGE=af5ff05d-5b31-40d0-b240-0c4b6742c633
+IMAGE=d13f4e65-e76b-41ff-aab2-986cef32e5ac
 ###IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
 COLOR=$1
 SERVERTYPE=$2
@@ -20,7 +20,7 @@ else
 	FLAVOR=01d0a643-b309-49b8-b1ff-7f20889f190e
 fi
 
-. ~/keystonerc_admin
+. ~/keystonerc_dennis
 
 echo +++Checking for duplicate instances
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
@@ -32,10 +32,10 @@ then
 fi
 
 echo +++Starting Instance ${COLOR}-${SERVERTYPE}
-echo +++"nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
+echo +++"nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
 
 
-INSTANCEID=`nova boot --key-name master  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
+INSTANCEID=`nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
 
 TIMEOUTCOUNTER=120
 while [[ `nova list | grep ACTIVE | grep $INSTANCEID` = "" ]];
