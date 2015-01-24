@@ -12,6 +12,8 @@ COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
 VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|production"
+ALL=(ALL) NOPASSWD: ALL
+
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
