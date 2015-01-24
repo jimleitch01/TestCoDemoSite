@@ -17,9 +17,9 @@ VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|p
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
-	FLAVOR=2
+	FLAVOR=4
 else
-	FLAVOR=3
+	FLAVOR=5
 fi
 
 . ~/keystonerc_dennis
@@ -90,26 +90,26 @@ do
    sudo sh -t -c "echo $HOST >> /etc/ansible/hosts.tmp"
 done
 
-sudo sh -c "echo >> /etc/ansible/hosts.tmp"
+sudo sh -t -c "echo >> /etc/ansible/hosts.tmp"
 
 for SERVERTYPE in $SERVERTYPES_LIST;
 do
-   sudo sh -c "echo; echo [$SERVERTYPE] >> /etc/ansible/hosts.tmp"
+   sudo sh -t -c "echo; echo [$SERVERTYPE] >> /etc/ansible/hosts.tmp"
    for HOST in $HOST_LIST;
    do
-      sudo sh -c "echo $HOST | grep $SERVERTYPE  >> /etc/ansible/hosts.tmp"
+      sudo sh -t -c "echo $HOST | grep $SERVERTYPE  >> /etc/ansible/hosts.tmp"
    done
-   sudo sh -c "echo >> /etc/ansible/hosts.tmp"
+   sudo sh -t -c "echo >> /etc/ansible/hosts.tmp"
 done
 
 for COLOR in $COLOR_LIST;
 do
-   sudo sh -c "echo; echo [$COLOR] >> /etc/ansible/hosts.tmp"
+   sudo sh -t -c "echo; echo [$COLOR] >> /etc/ansible/hosts.tmp"
    for HOST in $HOST_LIST;
    do
-      sudo sh -c "echo $HOST | grep $COLOR  >> /etc/ansible/hosts.tmp"
+      sudo sh -t -c "echo $HOST | grep $COLOR  >> /etc/ansible/hosts.tmp"
    done
-   sudo sh -c "echo >> /etc/ansible/hosts.tmp"
+   sudo sh -t -c "echo >> /etc/ansible/hosts.tmp"
 done
 
 sudo mv /etc/ansible/hosts.tmp /etc/ansible/hosts
