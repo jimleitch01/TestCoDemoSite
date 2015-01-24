@@ -17,9 +17,9 @@ VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|p
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
-	FLAVOR=4
+	FLAVOR=3
 else
-	FLAVOR=5
+	FLAVOR=4
 fi
 
 . ~/keystonerc_dennis
