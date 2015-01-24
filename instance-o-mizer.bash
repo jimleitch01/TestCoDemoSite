@@ -6,7 +6,7 @@
 #  Created by Jim Leitch on 3/17/14.
 #
 ###FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
-IMAGE=d13f4e65-e76b-41ff-aab2-986cef32e5ac
+IMAGE=23cc5b70-a4bc-406b-808d-6e73ac6724d4
 ###IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
 COLOR=$1
 SERVERTYPE=$2
