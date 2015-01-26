@@ -39,7 +39,7 @@ echo +++"nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-fcae
 
 INSTANCEID=`nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
 
-INSTANCEFLOATINGIP=$(nova floating-ip-create ext-net | grep ext-net | cut -f2 -d" ")
+FLOATINGIP=$(nova floating-ip-create ext-net | grep ext-net | cut -f2 -d" ")
 
 echo +++Add floating-ip to instance
 
@@ -82,9 +82,9 @@ sudo /etc/init.d/dnsmasq reload
 # Refresh ansible hosts
 echo +++Refreshing Ansible hosts
 # Create ansible Hosts File
-HOST_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}'`
-COLOR_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}' | cut -d"-" -f1 | sort | uniq`
-SERVERTYPES_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}' | cut -d"-" -f2 | sort | uniq`
+HOST_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $13}'`
+COLOR_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $13}' | cut -d"-" -f1 | sort | uniq`
+SERVERTYPES_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $13}' | cut -d"-" -f2 | sort | uniq`
 #echo HOST_LIST=$HOST_LIST
 #echo COLOR_LIST=$COLOR_LIST
 #echo SERVERTYPES_LIST=$SERVERTYPES_LIST
