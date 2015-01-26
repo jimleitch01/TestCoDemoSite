@@ -11,6 +11,7 @@ IMAGE=23cc5b70-a4bc-406b-808d-6e73ac6724d4
 COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
+FLOATINGIP=$(nova list grep $INSTANCENAME awk '{print$13}')  
 VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|production"
 
 
@@ -28,7 +29,13 @@ echo +++Checking for duplicate instances
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
 	echo +++Instance name $INSTANCENAME already exists, KILL IT !!!
+	echo +++Delete Floating IP	
+	
+	nova floating-ip-delete $FLOATINGIP
+	
+	echo +++Delete instance
 	nova delete $INSTANCENAME
+	
 	sleep 10
 	echo +++It is an ex $INSTANCENAME it has ceased to be
 fi
