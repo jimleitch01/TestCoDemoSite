@@ -43,7 +43,7 @@ FLOATINGIP=$(nova floating-ip-create ext-net | grep ext-net | cut -f2 -d" ")
 
 echo +++Add floating-ip to instance
 
-nova add-floating-ip $INSTANCEID $INSTANCEFLOATINGIP
+nova add-floating-ip $INSTANCEID $FLOATINGIP
 
 
 TIMEOUTCOUNTER=120
