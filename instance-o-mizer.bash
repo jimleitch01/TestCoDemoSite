@@ -41,6 +41,7 @@ INSTANCEID=`nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-f
 
 FLOATINGIP=$(nova floating-ip-create ext-net | grep ext-net | cut -f2 -d" ")
 
+echo +++Add floating-ip to instance
 
 nova add-floating-ip $INSTANCEID $FLOATINGIP
 
