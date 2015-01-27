@@ -13,7 +13,7 @@ COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
 FLOATINGIP=$(nova list| grep $INSTANCENAME| awk '{print$13}')  
-VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|production"
+VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acc|production"
 
 
 
