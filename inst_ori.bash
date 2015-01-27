@@ -5,12 +5,15 @@
 #
 #  Created by Jim Leitch on 3/17/14.
 #
+
+. ~/keystonerc_dennis
 ###FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
 IMAGE=af5ff05d-5b31-40d0-b240-0c4b6742c633
 ###IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
 COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
+FLOATINGIP=$(nova list| grep $INSTANCENAME| awk '{print$13}')
 VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|production|ont|tst|acc|prd"
 
 if [[ ${SERVERTYPE} != "jboss" ]];
@@ -20,13 +23,15 @@ else
 	FLAVOR=01d0a643-b309-49b8-b1ff-7f20889f190e
 fi
 
-. ~/keystonerc_admin
+
 
 echo +++Checking for duplicate instances
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
 	echo +++Instance name $INSTANCENAME already exists, KILL IT !!!
 	nova delete $INSTANCENAME
+	echo +++Delete Floating IP	
+	nova floating-ip-delete $FLOATINGIP
 	sleep 10
 	echo +++It is an ex $INSTANCENAME it has ceased to be
 fi
