@@ -37,10 +37,10 @@ then
 fi
 
 echo +++Starting Instance ${COLOR}-${SERVERTYPE}
-echo +++"nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9b  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
+echo +++"nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
 
 
-INSTANCEID=`nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9b  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
+INSTANCEID=`nova boot --key-name denniskp --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd  --flavor  $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
 
 TIMEOUTCOUNTER=120
 while [[ `nova list | grep ACTIVE | grep $INSTANCEID` = "" ]];
