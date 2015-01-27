@@ -24,8 +24,6 @@ else
 	FLAVOR=4
 fi
 
-. ~/keystonerc_dennis
-
 echo +++Checking for duplicate instances
 if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
