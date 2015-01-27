@@ -28,7 +28,7 @@
                 <echo>+++Server @{servertype}</echo>
                 <echo>+++Color ${color}</echo>
                 <exec executable="bash">
-                    <arg value="./instance-o-mizer.bash"/>
+                    <arg value="./inst-ori.bash"/>
                     <arg value="${color}"/>
                     <arg value="@{servertype}"/>
                 </exec>               
