@@ -25,9 +25,9 @@ VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|p
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
-   FLAVOR=3
+   FLAVOR=3c2796c4-edb9-444a-abab-84c99fb54e47
 else
-   FLAVOR=2
+   FLAVOR=59333e38-8972-4db4-90ff-865d5823d8e0
 fi
 
 echo +++Checking for duplicate instances
