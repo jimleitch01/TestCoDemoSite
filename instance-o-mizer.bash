@@ -16,6 +16,12 @@ INSTANCENAME=${COLOR}-${SERVERTYPE}
 FLOATINGIP=$(nova list| grep $INSTANCENAME| awk '{print$13}')
 VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|production|ont|tst|acc|prd"
 
+if [[ $FLOATINGIP == "|" ]]
+then
+        FLOATINGIP=""
+fi
+
+
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
 	FLAVOR=3
@@ -31,7 +37,11 @@ then
 	echo +++Instance name $INSTANCENAME already exists, KILL IT !!!
 	nova delete $INSTANCENAME
 	echo +++Delete Floating IP	
-	nova floating-ip-delete $FLOATINGIP
+	echo +++Delete Floating IP     
+        if [[ $FLOATINGIP != "" ]]
+        then
+                nova floating-ip-delete $FLOATINGIP
+        fi     
 	sleep 10
 	echo +++It is an ex $INSTANCENAME it has ceased to be
 fi
