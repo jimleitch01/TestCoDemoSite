@@ -26,7 +26,7 @@ if [[ ${SERVERTYPE} != "jboss" ]];
 then
 	FLAVOR=3
 else
-	FLAVOR=4
+	FLAVOR=2
 fi
 
 
