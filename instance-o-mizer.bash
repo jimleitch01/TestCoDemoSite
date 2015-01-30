@@ -78,7 +78,7 @@ echo +++Refreshing DNS and HOSTS
 sudo sh -c "grep STATIC /etc/hosts > /etc/hosts.tmp"
 #sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$9,\$4}' >> /etc/hosts.tmp"
 #sudo -E sh -c "nova list | grep ACTIVE | awk '{print $8,\" \",$4}' | tr -d \"novanetwork=\" >> /etc/hosts.tmp"
-sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$12,\$13}'|cut -d= -f2,3 |cut -d ' |' -f1 >>/etc/hosts.tmp"
+sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$12,\$13}'|cut -d= -f2,3 |cut -d '|'| cut -d ' ' -f1 >>/etc/hosts.tmp"
 
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
