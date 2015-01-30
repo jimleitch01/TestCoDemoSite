@@ -94,6 +94,9 @@ echo +++Refreshing Ansible hosts
 HOST_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}'`
 COLOR_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}' | cut -d"-" -f1 | sort | uniq`
 SERVERTYPES_LIST=`nova list | grep -E $VALID_COLORS | awk '{print $4}' | cut -d"-" -f2 | sort | uniq`
+
+
+
 #echo HOST_LIST=$HOST_LIST
 #echo COLOR_LIST=$COLOR_LIST
 #echo SERVERTYPES_LIST=$SERVERTYPES_LIST
