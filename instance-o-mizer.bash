@@ -9,7 +9,7 @@
 
 . ~/keystonerc_dennis
 
-IMAGE=23cc5b70-a4bc-406b-808d-6e73ac6724d4
+IMAGE=0c4b64c2-16a0-4bb4-bc40-bf3d0cba7ccd
 ###IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
 COLOR=$1
 SERVERTYPE=$2
@@ -25,9 +25,9 @@ VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|p
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
-   FLAVOR=0c4b64c2-16a0-4bb4-bc40-bf3d0cba7ccd
+   FLAVOR=90da44cb-b4dc-4cb6-a2d7-6888dfd524ee
 else
-   FLAVOR=0c4b64c2-16a0-4bb4-bc40-bf3d0cba7ccd
+   FLAVOR=a200a61e-cf01-48a6-bbd3-91fddfba256c
 fi
 
 echo +++Checking for duplicate instances
