@@ -36,7 +36,6 @@ if [[ `nova list | grep $INSTANCENAME` != "" ]];
 then
 	echo +++Instance name $INSTANCENAME already exists, KILL IT !!!
 	nova delete $INSTANCENAME
-	echo +++Delete Floating IP	
 	echo +++Delete Floating IP     
         if [[ $FLOATINGIP != "" ]]
         then
