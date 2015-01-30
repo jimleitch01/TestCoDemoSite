@@ -47,7 +47,7 @@ then
 fi
 
 echo +++Starting Instance ${COLOR}-${SERVERTYPE}
-echo +++"nova boot --key-name masterkey --nic net-id=3ccb7068-e628-4dc7-a075-676141a260dc --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
+echo +++"nova boot --key-name denniskp2 --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
 
 
 INSTANCEID=`nova boot --key-name masterkey --nic net-id=3ccb7068-e628-4dc7-a075-676141a260dc --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
