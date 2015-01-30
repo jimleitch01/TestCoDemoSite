@@ -81,6 +81,7 @@ sudo -E sh -c "nova list | grep ACTIVE | awk '{print \$12,\$13}'|cut -d= -f2,3 |
 sudo mv -f /etc/hosts.tmp /etc/hosts
 sudo /etc/init.d/dnsmasq reload
 
+sleep 10
 ###echo +++Updating hosts on master
 ###sudo scp /etc/hosts root@10.10.10.10:/etc/hosts
 
