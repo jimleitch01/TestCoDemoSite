@@ -9,7 +9,7 @@
 
 . ~/keystonerc_dennis
 
-IMAGE=0c4b64c2-16a0-4bb4-bc40-bf3d0cba7ccd
+IMAGE=23cc5b70-a4bc-406b-808d-6e73ac6724d4
 ###IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
 COLOR=$1
 SERVERTYPE=$2
