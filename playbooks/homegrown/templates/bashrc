@@ -10,5 +10,5 @@ alias mv='mv -i'
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-export http_proxy=http://192.168.4.10
-export https_proxy=http://192.168.4.10
+export http_proxy=http://192.168.4.10:3128
+export https_proxy=http://192.168.4.10:3128
