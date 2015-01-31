@@ -9,7 +9,7 @@
     </description>
     
     <property name="message" value="Hello World!"/>
- <property name="servertypes" value="jboss,mysql,web-01,web-02,soap,load-balancer"/>  
+ <property name="servertypes" value="jboss"/>  
 <!--   <property name="servertypes" value="jboss"/>  -->
 
     
