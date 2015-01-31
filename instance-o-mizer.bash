@@ -25,7 +25,7 @@ VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|p
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
-   FLAVOR=90da44cb-b4dc-4cb6-a2d7-6888dfd524ee
+   FLAVOR=91400f2a9-3576-401b-80d4-7eadfc301f85
 else
    FLAVOR=d93792c7-65ab-423d-96ff-1e77bd976a86
 fi
