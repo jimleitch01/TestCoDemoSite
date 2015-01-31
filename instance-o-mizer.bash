@@ -27,7 +27,7 @@ if [[ ${SERVERTYPE} != "jboss" ]];
 then
    FLAVOR=90da44cb-b4dc-4cb6-a2d7-6888dfd524ee
 else
-   FLAVOR=d93792c7-65ab-423d-96ff-1e77bd976a86
+   FLAVOR=90da44cb-b4dc-4cb6-a2d7-6888dfd524ee
 fi
 
 echo +++Checking for duplicate instances
