@@ -36,7 +36,7 @@
       yum: pkg=wget state=installed
       
     - name: update gmp installed 
-      yum: pkg=gmp state=latest
+      yum: name=gmp state=latest
 
 #    - name: disable selinux
 #      command: /usr/sbin/setenforce 0
