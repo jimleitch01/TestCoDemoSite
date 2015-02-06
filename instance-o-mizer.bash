@@ -7,15 +7,13 @@
 #
 ###FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
 
+. ~/keystonerc_dennis
 
-
-USER=$dennis
-. ~/keystonerc_$USER
 IMAGE=9ed4696a-cef8-400b-a0bc-71ab38fb1d0b
+###IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
 COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
-NETID=$(nova net-list |grep $USER|awk '{print $2}')
 
 FLOATINGIP=$(nova list| grep $INSTANCENAME| awk '{print$13}')  
 if [[ $FLOATINGIP == "|" ]] 
@@ -52,7 +50,7 @@ echo +++Starting Instance ${COLOR}-${SERVERTYPE}
 echo +++"nova boot --key-name DK01 --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
 
 
-INSTANCEID=`nova boot --key-name $USER --nic net-id=$NETID --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
+INSTANCEID=`nova boot --key-name DK01 --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
 
 FLOATINGIP=$(nova floating-ip-create ext-net | grep ext-net | cut -f2 -d" ")
 
