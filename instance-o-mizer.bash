@@ -9,7 +9,7 @@
 
 
 
-USER=$"Dennis"
+USER=$dennis
 . ~/keystonerc_$USER
 IMAGE=9ed4696a-cef8-400b-a0bc-71ab38fb1d0b
 COLOR=$1
