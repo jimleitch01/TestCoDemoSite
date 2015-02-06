@@ -8,9 +8,9 @@
 ###FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
 
 ##variabelen per user
-USER=bas
-NETWORK=bas-private
-KEYNAME=BasM_Master
+USER=demo  #bas
+NETWORK=demo-net-01  #bas-private 
+KEYNAME=demo-keypair  #BasM_Master
 IMAGENAME=CentOS6.6v6
 
 . ~/keystonerc_$USER
