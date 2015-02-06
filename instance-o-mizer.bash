@@ -7,10 +7,17 @@
 #
 ###FLAVOR=db2fc608-e6cf-4f59-a397-ba1c5043761d
 
-. ~/keystonerc_dennis
+##variabelen per user
+USER=bas
+NETWORK=bas-private
+KEYNAME=BasM_Master
+IMAGENAME=CentOS6.6v6
 
-IMAGE=9ed4696a-cef8-400b-a0bc-71ab38fb1d0b
-###IMAGE=4636ea02-5779-4e27-8265-8de679d09c28
+. ~/keystonerc_$USER
+
+IMAGE=`nova image-list |grep $IMAGENAME |awk '{print $2}'`
+NETID=`nova network-show $NETWORK |grep '| id' |awk '{print $4}'`
+
 COLOR=$1
 SERVERTYPE=$2
 INSTANCENAME=${COLOR}-${SERVERTYPE}
@@ -25,9 +32,9 @@ VALID_COLORS="red|orange|yellow|green|blue|indigo|violet|testing|ci|acceptance|p
 
 if [[ ${SERVERTYPE} != "jboss" ]];
 then
-   FLAVOR=90da44cb-b4dc-4cb6-a2d7-6888dfd524ee
+   FLAVOR="f86d921a-edeb-4d94-8dc5-38a5eb37a35e" #mini
 else
-   FLAVOR=90da44cb-b4dc-4cb6-a2d7-6888dfd524ee
+   FLAVOR="f86d921a-edeb-4d94-8dc5-38a5eb37a35e" #mini
 fi
 
 echo +++Checking for duplicate instances
@@ -47,10 +54,9 @@ then
 fi
 
 echo +++Starting Instance ${COLOR}-${SERVERTYPE}
-echo +++"nova boot --key-name DK01 --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
+echo +++"nova boot --key-name $KEYNAME --nic net-id=$NETID --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE}"
 
-
-INSTANCEID=`nova boot --key-name DK01 --nic net-id=000f5738-97f5-418c-9331-fcae0b39c9bd --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
+INSTANCEID=`nova boot --key-name $KEYNAME --nic net-id=$NETID --flavor $FLAVOR --image $IMAGE ${COLOR}-${SERVERTYPE} | grep " id " | awk '{print $4}'`
 
 FLOATINGIP=$(nova floating-ip-create ext-net | grep ext-net | cut -f2 -d" ")
 
