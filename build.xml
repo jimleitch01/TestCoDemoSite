@@ -20,7 +20,7 @@
     </target>
     
     <target name="instance_start">
-        
+  <!--      
         <for list="${servertypes}" param="servertype">
             <sequential>
 
@@ -35,7 +35,7 @@
             </sequential>
         </for>
         
-        
+      -->  
         
         <exec executable="bash">
             <arg value="./orchestrate-o-mizer.bash"/>
