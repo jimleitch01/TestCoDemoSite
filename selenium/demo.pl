@@ -6,8 +6,8 @@ use Test::WWW::Selenium;
 use Test::More "no_plan";
 
 
-my $sel = Test::WWW::Selenium->new( host => 'ondemand.saucelabs.com', 
-port => 80,
+my $sel = Test::WWW::Selenium->new( host => 'ondemand.saucelabs.com',
+                                    port => 80,
                                     browser => '{"username": "jimleitch",'.
                                     '"access-key": "3eb84966-ba07-4e0d-98a5-ed1d2f3e2ef8",'.
                                     '"os": "Windows 2003",'.
