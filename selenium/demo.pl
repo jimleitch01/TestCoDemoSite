@@ -1,22 +1,25 @@
+#! /usr/bin/perl
 use strict;
 use warnings;
 use Time::HiRes qw(sleep);
 use Test::WWW::Selenium;
 use Test::More "no_plan";
 
-my $sel = Test::WWW::Selenium->new( host => 'localhost', 
-                                    port => 4445, 
+
+my $sel = Test::WWW::Selenium->new( host => 'ondemand.saucelabs.com', 
+port => 80,
                                     browser => '{"username": "jimleitch",'.
-                                               '"access-key": "3eb84966-ba07-4e0d-98a5-ed1d2f3e2ef8",'.
-                                               '"os": "Windows 2003",'.
-                                               '"browser": "firefox",'.
-                                               '"browser-version": "7",'.
-                                               '"name": "Petstore test"}',
+                                    '"access-key": "3eb84966-ba07-4e0d-98a5-ed1d2f3e2ef8",'.
+                                    '"os": "Windows 2003",'.
+                                    '"browser": "firefox",'.
+                                    '"browser-version": "7",'.
+                                    '"name": "Petstore test"}',
                                     browser_url => 'http://ci-jboss:8080/' );
+                                    #browser_url => 'http://demo.test-stack.com/petstoreWeb' );
 
 $sel->open_ok("/petstoreWeb");
 
-sleep(30);
+sleep(60);
 $sel->click_ok("link=Stop Derby DB (stops the DB to allow redeploy)");
 $sel->wait_for_page_to_load_ok("30000");
 my $DBStopped = $sel->get_body_text();
